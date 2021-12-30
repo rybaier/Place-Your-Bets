@@ -20,7 +20,7 @@
             //100 as base value 
         //JS
             // function for point bank start with 100 
-            // if function that triggers game over message when point bank drops below 0 
+            // if function that triggers gameOver message when point bank drops below 0 
     //player's input bet value     
         // create input field for JS variable reference
         // JS
@@ -54,6 +54,8 @@
                 //if winning square id matches chosen square id 
                     //triggers betWinning function that multiplys betValue input by chosen odds
                         //betWinning point value added to the player's point bank total  
+                //if winning square id does not match chosen square id 
+                    // triggers lostBet message ('your square did not win try again')
 
 //FUNCTIONS
     // function for point bank bet value subtraction
