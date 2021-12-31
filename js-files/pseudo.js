@@ -14,7 +14,7 @@
     // function to end race 
 
 
-// How I am going to do make MVP
+// How I am going to do  MVP
     //player's point bank display
         //create a div id for JS variable pointBankDisplay 
             //100 as base value 
@@ -59,8 +59,26 @@
 
 //FUNCTIONS
     // function for point bank bet value subtraction
+        //takes value from betValueInput and subtracts from player's point bank
     // function for point bank winnings addition
+        // a set of conditionals (one for each square) that multiply the value from the betValueInput
+        // by the odds of chosen square
     // function to end game if point bank reaches 0 
-    // function to generate random speed for squares on start race 
+        //a global scope function that is activated if the players point bank total reaches below zero
+            //when they try to make another bet the function would trigger upon the subtraction dropping 
+            //the point bank below zero 
+    // function to generate random speed for squares on start race
+        // sets each square's speed to a random integer
+        // sends squares from start to finish based upon that random speed 
+        //triggered by start race button 
     // function to end race 
+        // triggers a display message of winning square 
+            // first square that crosses the finish line
+        // 2 conditionals 
+            // if player's chosen square does not match winning square
+                // returns nothing 
+                // (after MVP) resets betValue display to 0 and chosen square display to empty
+            // if player's chosen square matches the winning square
+                // chosen square odds multiplied by betValue input 
+                    //adds new winnings value to player's point bank total 
 //(after MVP) place bet button with event listener that takes input from bet value input
