@@ -5,8 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Place Your Bets</title>
+    <link rel="stylesheet" href="styles.css" >
 </head>
 <body>
+    <div id = "background">
     
+        <h1>Place Your Bets!</h1>
+       
+        <div class = "racetrack">
+            <div class = "starting-line">
+                <div class = "racers">
+                    <div id = "racer-one">1</div> <!-- should i use progress for the squares? no.-->
+                    <div id = "racer-two">2</div> <!-- Research suggests canvas?  easier to make move-->
+                </div>
+            </div> 
+            <div class = "finish-line">
+                
+            </div>       
+        </div>
+        <div class = "displays">
+            <label id ="point-bank-display">Point Bank Total 100</label>
+            <button id = "start-race">Start Race!</button>
+        </div>
+        <div class= "betting-selection"> 
+            <input id= "bet-value-input" placeholder = "Wager amount?">
+            <button id = "first-racer">2-1</button>
+            <button id = "second-racer">3-1</button>
+        </div>
+    </div>
+    <script src="js-files/test.js"></script>
 </body>
 </html>

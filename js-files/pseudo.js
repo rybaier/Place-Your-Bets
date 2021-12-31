@@ -16,20 +16,20 @@
 
 // How I am going to do  MVP
     //player's point bank display
-        //create a div id for JS variable pointBankDisplay 
-            //100 as base value 
+//CHECK       //create a div id for JS variable pointBankDisplay (trying html <label> for this)
+//CHECK           //100 as base value 
         //JS
             // function for point bank start with 100 
             // if function that triggers gameOver message when point bank drops below 0 
     //player's input bet value     
-        // create input field for JS variable reference
+//CHECK        // create input field for JS variable reference
         // JS
             // attached to placeBet button event listener
                 // event triggers function for point bank value subtraction 
                 // (after MVP) event moves input value to betValueDisplay 
     //players's buttons for chosen odds 
-        // create button class for odds for JS variable reference
-        // create button id's for each set of odds 2-1,3-1,4-1, etc. JS const variable reference
+//CHECK       // create button class for odds for JS variable reference
+//CHECK        // create button id's for each set of odds 2-1,3-1,4-1, etc. JS const variable reference
         // JS
             // button id attached to event listener that highlights chosen odds (button)
                 // event triggers color change for button (yellow)
@@ -38,17 +38,17 @@
                     // event locks in chosen button id for betWinnings return  
                     // event sends chosen button id to chosen square display
     //start race button with event listener that activates Random speed function
-        // create button id for JS variable reference startRace
+//CHECK        // create button id for JS variable reference startRace
         // JS
             // button id attached to event listener 
                 //event triggers randomSpeed generate function 
                     //randomSpeed function will set random speed that each square crosses screen
                         //function will be applied to button class variable
     //start line
-        // create div class for start line for squares  for JS variable reference startLine
-        //create div id for each square for JS variable reference
+//CHECK        // create div class for start line for squares  for JS variable reference startLine
+//CHECK        //create div id for each square for JS variable reference
     //finish line
-        //create div class for finish line for JS variable reference finishLine
+//CHECK        //create div class for finish line for JS variable reference finishLine
             // if function for square class to cross finish line 
                 //triggers raceWinner message 
                 //if winning square id matches chosen square id 
@@ -81,4 +81,6 @@
             // if player's chosen square matches the winning square
                 // chosen square odds multiplied by betValue input 
                     //adds new winnings value to player's point bank total 
+                // (after MVP) resets betValue display to 0 and chosen square display to empty
+
 //(after MVP) place bet button with event listener that takes input from bet value input

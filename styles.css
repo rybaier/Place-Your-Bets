@@ -1,0 +1,36 @@
+#racer-one {
+    background-color: rgba(254, 7, 7, 0.838);
+    color: white;
+    text-align: center;
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+#racer-two {
+    background-color: rgba(40, 7, 254, 0.838);
+    display: block;
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 50px; 
+}
+.starting-line {
+    background-color: rgb(4, 167, 69);
+    height: 200px;
+    width: 100px;
+}
+.finish-line{
+    background-color: black;
+    height: 200px;
+    width: 100px;
+    display: flex;
+    justify-content: flex-end;
+}
+.racetrack {
+    background-color: beige;
+    height: 200px;
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    
+}
