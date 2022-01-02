@@ -6,7 +6,7 @@ let pointBankDisplay = document.querySelector('#point-bank-display');
 let pointBankTotal = document.querySelector('#point-bank-total')
 // console.log(pointBankTotal, 'works')
 let chosenRacer = document.querySelectorAll('.racers')
-console.log(chosenRacer, 'works');
+// console.log(chosenRacer, 'works');
 let startLine = document.querySelector('.starting-line');
 // console.log(startLine, 'works');
 let finishLine = document.querySelector('.finish-line');
@@ -14,7 +14,7 @@ let finishLine = document.querySelector('.finish-line');
 let startRace = document.querySelector('#start-race');
 // console.log(startRace, 'works')
 let betValueInput = document.querySelector('#bet-value-input');
-console.log(betValueInput,'works')
+// console.log(betValueInput,'works')
 let firstRacer = document.querySelector('#first-racer');
 // console.log(firstRacer, 'works')
 let secondRacer = document.querySelector('#second-racer')
@@ -22,7 +22,8 @@ let secondRacer = document.querySelector('#second-racer')
 let placeBet = document.querySelector('#place-bet')
 // console.log(placeBet)
 let bankTotal = 100
-
+let wagerWinnings = document.querySelector('#check-if-won')
+// console.log(wagerWinnings, 'this works')
 
 // let winningRacer = this should be an arrow function for //event that takes first square across the finish lint
 
@@ -33,20 +34,36 @@ function getBetValue(){
 //    console.log(wager)
     bankTotal -= wager
     pointBankTotal.innerHTML = bankTotal 
+   
     gameOver()
     // console.log(bankTotal) 
 }
 // getBetValue()
 function betWinnings () {
-    let winnings = betValueInput.value * winningRacer
+    // if (winningRacer === chosenRacer)
+    let winnings = betValueInput.value * 2 // this will be winningRacer 
+    bankTotal += winnings
+    pointBankTotal.innerHTML = bankTotal
+    let winningMessage = document.createElement("h3")
+    winningMessage.innerHTML = `Congratulations your winnings are ${winnings} points`
+    document.body.appendChild(winningMessage)
+    //if (winningRacer !== chosenRacer) 
+    // return 
+    // let losingMessage = document.createElement('h3')
+    // losingMessage.innerHTML = 'You have lost'
+    // document.body.appendChild(losingMessage)
 }
+
+// function winningRacer () {
+//     if 
+// }
 
 function racingSpeed () {
     //need to figure out css and how to get squares to move for this functionto be built
  let speed =Math.floor(Math.random())
 }
 function gameOver (){
-   let gameOverMessage = document.createElement("h2")
+   let gameOverMessage = document.createElement("h3")
    gameOverMessage.innerHTML ="You have no more money to bet. please refresh page to try again"
     if (pointBankTotal.innerHTML < 0) {
      return document.body.appendChild(gameOverMessage)
@@ -57,3 +74,4 @@ gameOver()
 
 placeBet.addEventListener('click', getBetValue)
 startRace.addEventListener('click', racingSpeed)
+wagerWinnings.addEventListener('click', betWinnings)
