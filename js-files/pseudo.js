@@ -19,8 +19,8 @@
 //CHECK       //create a div id for JS variable pointBankDisplay (trying html <label> for this)
 //CHECK           //100 as base value 
         //JS
-            // function for point bank start with 100 
-            // if function that triggers gameOver message when point bank drops below 0 
+//CHECK            // no longer a function need for point bank start with 100 see html 
+//CHECK            // if function that triggers gameOver message when point bank drops below 0 
     //player's input bet value     
 //CHECK        // create input field for JS variable reference
         // JS
@@ -56,6 +56,10 @@
                         //betWinning point value added to the player's point bank total  
                 //if winning square id does not match chosen square id 
                     // triggers lostBet message ('your square did not win try again')
+//CHECK    //game over message function
+        //JS 
+//CHECK            //create function to create game over message that triggers when point bank reaches 0
+            //(after mvp) use gif in place of game over message
 
 //FUNCTIONS
     // function for point bank bet value subtraction
@@ -84,3 +88,6 @@
                 // (after MVP) resets betValue display to 0 and chosen square display to empty
 
 //(after MVP) place bet button with event listener that takes input from bet value input
+//AFTER MVP IDEAS
+    //add sound effects 
+    //change losing message to losing gif
