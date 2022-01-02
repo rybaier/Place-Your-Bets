@@ -11,7 +11,7 @@ let startLine = document.querySelector('.starting-line');
 // console.log(startLine, 'works');
 let finishLine = document.querySelector('.finish-line');
 // console.log(finishLine, 'works');
-let startRace = document.querySelector('#start-race');
+// let startRace = document.querySelector('#start-race');
 // console.log(startRace, 'works')
 let betValueInput = document.querySelector('#bet-value-input');
 // console.log(betValueInput,'works')
@@ -24,7 +24,9 @@ let placeBet = document.querySelector('#place-bet')
 let bankTotal = 100
 let wagerWinnings = document.querySelector('#check-if-won')
 // console.log(wagerWinnings, 'this works')
-
+// let raceTrack = document.getElementsByClassName("racetrack")
+// let racetrackContext = raceTrack.getContext('2d')
+// console.log(raceTrack, 'works')
 // let winningRacer = this should be an arrow function for //event that takes first square across the finish lint
 
 //FUNCTIONS
@@ -62,6 +64,7 @@ function racingSpeed () {
     //need to figure out css and how to get squares to move for this functionto be built
  let speed =Math.floor(Math.random())
 }
+
 function gameOver (){
    let gameOverMessage = document.createElement("h3")
    gameOverMessage.innerHTML ="You have no more money to bet. please refresh page to try again"
@@ -73,5 +76,9 @@ gameOver()
 //EVENT LISTENERS
 
 placeBet.addEventListener('click', getBetValue)
-startRace.addEventListener('click', racingSpeed)
+// startRace.addEventListener('click', racingSpeed)
 wagerWinnings.addEventListener('click', betWinnings)
+
+firstRacer.addEventListener('click', () => {
+    firstRacer.style.backgroundColor = 'yellow';
+})

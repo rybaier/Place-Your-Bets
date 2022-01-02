@@ -91,3 +91,9 @@
 //AFTER MVP IDEAS
     //add sound effects 
     //change losing message to losing gif
+
+
+//NOTES
+//<!--should i use progress for the squares? no. -->
+//<!--Research suggests canvas?  easier to make move -->
+//currentyl switching between canvas and div trying to figure out the best way to make it move across screen
