@@ -24,8 +24,8 @@
     //player's input bet value     
 //CHECK        // create input field for JS variable reference
         // JS
-            // attached to placeBet button event listener
-                // event triggers function for point bank value subtraction 
+//CHECK            // attached to placeBet button event listener
+//CHECK                // event triggers function for point bank value subtraction 
                 // (after MVP) event moves input value to betValueDisplay 
     //players's buttons for chosen odds 
 //CHECK       // create button class for odds for JS variable reference
