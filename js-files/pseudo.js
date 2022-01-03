@@ -32,7 +32,8 @@
 //CHECK        // create button id's for each set of odds 2-1,3-1,4-1, etc. JS const variable reference
         // JS
             // button id attached to event listener that highlights chosen odds (button)
-                // event triggers color change for button (yellow)
+//CHECK                // event triggers color change for button (yellow)
+                    //upon end of race event button color reset to original
                 // event locks in chosen button id for betWinnings return 
             // (after MVP) button class attached to placeBet button event listener 
                     // event locks in chosen button id for betWinnings return  
@@ -52,10 +53,12 @@
             // if function for square class to cross finish line 
                 //triggers raceWinner message 
                 //if winning square id matches chosen square id 
+                //do this by css style position boolean
                     //triggers betWinning function that multiplys betValue input by chosen odds
                         //betWinning point value added to the player's point bank total  
                 //if winning square id does not match chosen square id 
                     // triggers lostBet message ('your square did not win try again')
+            
 //CHECK    //game over message function
         //JS 
 //CHECK            //create function to create game over message that triggers when point bank reaches 0
@@ -96,4 +99,12 @@
 //NOTES
 //<!--should i use progress for the squares? no. -->
 //<!--Research suggests canvas?  easier to make move -->
-//currentyl switching between canvas and div trying to figure out the best way to make it move across screen
+//currently switching between canvas and div trying to figure out the best way to make it move across screen
+//more research has indicated I should be doing this with CSS animations! 
+//I am frustrated at the back and forth of getting these racers to move 
+// on click add a css class thats doing something 
+//different animations for different transitions 
+
+//Z index
+ //need to figure out css and how to get squares to move for this functionto be built 
+    //have switched to canvas animation this may be better served in that file

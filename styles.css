@@ -1,3 +1,36 @@
+#racetrack {
+    background-color: beige;
+    height: 200px;
+    width: 1500px;
+    display: flex;
+    z-index: 0;
+    
+}
+#starting-line {
+    
+    justify-self:flex-start;
+    background-color: rgb(4, 167, 69);
+    height: 100%;
+    width: 5%;
+    z-index: 2;
+    
+}
+#finish-line{
+    position: relative;
+    left: 1300px;
+    background-color: black;
+    height: 100%;
+    width: 5%;
+    z-index: 2;
+   
+}
+
+.racers-on-track{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
 #racer-one {
     background-color: rgba(254, 7, 7, 0.838);
     color: white;
@@ -5,7 +38,14 @@
     display: block;
     height: 50px;
     width: 50px;
+    z-index: 3;
+    position: relative;
+    right:50px;
 }
+/* #racer-one:hover {
+    transition: 10s;
+    transform: translateX(1400px);
+} */
 #racer-two {
     background-color: rgba(40, 7, 254, 0.838);
     display: block;
@@ -13,25 +53,11 @@
     text-align: center;
     height: 50px;
     width: 50px; 
+    z-index: 3;
+    position: relative;
+    right: 50px;
 }
-.starting-line {
-    background-color: rgb(4, 167, 69);
-    height: 200px;
-    width: 100px;
+#racer-two:hover {
+    transition: 12s;
+    transform: translateX(1400px);
 }
-.finish-line{
-    background-color: black;
-    height: 200px;
-    width: 100px;
-    display: flex;
-    justify-content: flex-end;
-}
-#racetrack {
-    background-color: beige;
-    height: 200px;
-    width: 1000px;
-    display: flex;
-    flex-direction: row;
-    
-}
-
