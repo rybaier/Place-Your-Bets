@@ -41,10 +41,10 @@
     //start race button with event listener that activates Random speed function
 //CHECK        // create button id for JS variable reference startRace
         // JS
-            // button id attached to event listener 
-                //event triggers randomSpeed generate function 
-                    //randomSpeed function will set random speed that each square crosses screen
-                        //function will be applied to button class variable
+//CHECK            // button id attached to event listener 
+//CHECK                //event triggers randomSpeed generate function 
+//CHECK                    //randomSpeed function will set random speed that each square crosses screen
+//CHECK                        //function will be applied to button id variable
     //start line
 //CHECK        // create div class for start line for squares  for JS variable reference startLine
 //CHECK        //create div id for each square for JS variable reference

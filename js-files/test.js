@@ -30,6 +30,8 @@ console.log(racer1)
 
 let racer2 = document.getElementById('racer-two')
 console.log(racer2)
+let racer3 = document.getElementById('racer-three')
+let racer4 = document.getElementById('racer-four')
 
 let firstRacer = document.querySelector('#first-racer');
 // console.log(firstRacer, 'works')
@@ -43,6 +45,7 @@ let placeBet = document.querySelector('#place-bet')
 let bankTotal = 100
 
 let wagerWinnings = document.querySelector('#check-if-won')
+
 
 // console.log(wagerWinnings, 'this works')
 // let raceTrack = document.getElementsByClassName("racetrack") // moved to canvas file
@@ -82,13 +85,19 @@ function betWinnings () {
 //     if 
 // }
 
-function racingSpeed () {
-    let speed1 =Math.floor(Math.random()*5) + 2
-    let speed2 =Math.floor(Math.random()*5) + 2
+function racingSpeed () {//After MVP perhaps if I create an empty array and have random numbers pushed into it I can prevent the same number from showing up
+    let speed1 =Math.floor(Math.random()*7) + 1
+    let speed2 =Math.floor(Math.random()*7) + 1
+    let speed3 =Math.floor(Math.random()*7) + 1
+    let speed4 =Math.floor(Math.random()*7) + 1
     racer1.style.transitionDuration = `${speed1}s`
     racer2.style.transitionDuration = `${speed2}s`
+    racer3.style.transitionDuration = `${speed3}s`
+    racer4.style.transitionDuration = `${speed4}s`
     racer1.style.transform = "translateX(1400px)"
     racer2.style.transform = "translateX(1400px)"
+    racer3.style.transform = "translateX(1400px)"
+    racer4.style.transform = "translateX(1400px)"
 }
 
 function gameOver (){

@@ -42,10 +42,7 @@
     position: relative;
     right:50px;
 }
-/* #racer-one:hover {
-    transition: 10s;
-    transform: translateX(1400px);
-} */
+
 #racer-two {
     background-color: rgba(40, 7, 254, 0.838);
     display: block;
@@ -57,7 +54,25 @@
     position: relative;
     right: 50px;
 }
-#racer-two:hover {
-    transition: 12s;
-    transform: translateX(1400px);
+#racer-three {
+    background-color: rgba(254, 184, 7, 0.838);
+    display: block;
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 50px; 
+    z-index: 3;
+    position: relative;
+    right: 50px;
+}
+#racer-four {
+    background-color: rgba(172, 7, 254, 0.838);
+    display: block;
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 50px; 
+    z-index: 3;
+    position: relative;
+    right: 50px;
 }
