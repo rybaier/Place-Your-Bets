@@ -7,7 +7,7 @@ let pointBankDisplay = document.querySelector('#point-bank-display');
 let pointBankTotal = document.querySelector('#point-bank-total')
 // console.log(pointBankTotal, 'works')
 
-// let chosenRacer = document.getElementsByClassName('racers')
+// let chosenRacer = document.getElementsByClassName('racers') //no longer needed here variable name utilized for something else
 // console.log(chosenRacer, 'works');
 
 let startLine = document.querySelector('.starting-line');
@@ -50,7 +50,7 @@ let bankTotal = 100
 
 let winningsCalculator = 0
 let winningRacer = " "
-
+let chosenRacer = " "
 
 // console.log(wagerWinnings, 'this works')
 // let raceTrack = document.getElementsByClassName("racetrack") // moved to canvas file
@@ -126,12 +126,24 @@ function racingSpeed () {
     racer2.style.transform = "translateX(1400px)"
     racer3.style.transform = "translateX(1400px)"
     racer4.style.transform = "translateX(1400px)"
-    if (speed1 < speed2 && speed1 < speed3 && speed1 < speed4) return winningsCalculator = 2, winningRacer = "2"
-    if (speed2 < speed1 && speed2 < speed3 && speed2 < speed4) return winningsCalculator = 3, winningRacer = "3"
-    if (speed3 < speed1 && speed3 < speed2 && speed3 < speed4) return winningsCalculator = 4, winningRacer = "4"
-    if (speed4 < speed1 && speed4 < speed2 && speed4 < speed3) return winningsCalculator = 5, winningRacer = "5"
-    console.log(winningsCalculator) //not working why?
-    console.log(winningRacer) //not working why?
+    if (speed1 < speed2 && speed1 < speed3 && speed1 < speed4) {
+        console.log( winningsCalculator = 2, winningRacer = "2") 
+        return winningsCalculator = 2, winningRacer = "2"
+    }
+    if (speed2 < speed1 && speed2 < speed3 && speed2 < speed4) {
+        console.log(winningsCalculator = 3, winningRacer = "3")
+        return winningsCalculator = 3, winningRacer = "3"
+    }
+    if (speed3 < speed1 && speed3 < speed2 && speed3 < speed4) {
+        console.log(winningsCalculator = 4, winningRacer = "4")
+        return winningsCalculator = 4, winningRacer = "4"
+    }
+    if (speed4 < speed1 && speed4 < speed2 && speed4 < speed3) {
+        console.log (winningsCalculator = 5, winningRacer = "5")
+        return winningsCalculator = 5, winningRacer = "5"
+        }
+    // console.log(winningsCalculator) //not working why?// needs to be in each if statement before return
+    // console.log(winningRacer) //not working why?
 }
 
 function gameOver (){
@@ -192,15 +204,23 @@ wagerWinnings.addEventListener('click', betWinnings)
 function chooseRacer(){
     firstRacer.addEventListener('click', () => {
         firstRacer.style.backgroundColor = 'yellow'
+        chosenRacer = firstRacer.innerHTML
+        console.log (chosenRacer)
     })
     secondRacer.addEventListener('click', () => {
         secondRacer.style.backgroundColor = 'yellow'
+        chosenRacer = secondRacer.innerHTML
+        console.log (chosenRacer)
     })
     thirdRacer.addEventListener('click', () => {
         thirdRacer.style.backgroundColor = 'yellow'
+        chosenRacer = thirdRacer.innerHTML
+        console.log (chosenRacer)
     })
     fourthRacer.addEventListener('click', () => {
         fourthRacer.style.backgroundColor = 'yellow'
+        chosenRacer = fourthRacer.innerHTML
+        console.log (chosenRacer)
     })
 }
 
