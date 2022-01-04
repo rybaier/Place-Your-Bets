@@ -56,7 +56,15 @@ let wagerWinnings = document.querySelector('#check-if-won')
 //FUNCTIONS
 
 function getBetValue(){
-   let wager = betValueInput.value
+      racer1.style.transitionDuration = `0.5s`
+    racer2.style.transitionDuration = `0.5s`
+    racer3.style.transitionDuration = `0.5s`
+    racer4.style.transitionDuration = `0.5s`
+    racer1.style.transform = "translateX(0px)"
+    racer2.style.transform = "translateX(0px)"
+    racer3.style.transform = "translateX(0px)"
+    racer4.style.transform = "translateX(0px)" 
+    let wager = betValueInput.value
 //    console.log(wager)
     bankTotal -= wager
     pointBankTotal.innerHTML = bankTotal 
@@ -66,6 +74,7 @@ function getBetValue(){
 }
 // getBetValue()
 function betWinnings () {
+
     // if (winningRacer === chosenRacer)
     let winnings = betValueInput.value * 2 // this will be winningRacer odds taken from innerHTML of racer  though I could just set the 
     // total multiplication value of odds to be equal to number of racers number of racers = odds of being correct
@@ -121,6 +130,8 @@ wagerWinnings.addEventListener('click', betWinnings)
 
 firstRacer.addEventListener('click', () => {
     firstRacer.style.backgroundColor = 'yellow';
+    // racer1.style.transform = 
+
 })
 //why can I not get this to work for all racers it only works for individual racer id not the class!!!!
 
