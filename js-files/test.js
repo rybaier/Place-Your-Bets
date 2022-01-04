@@ -7,8 +7,8 @@ let pointBankDisplay = document.querySelector('#point-bank-display');
 let pointBankTotal = document.querySelector('#point-bank-total')
 // console.log(pointBankTotal, 'works')
 
-let chosenRacer = document.getElementsByClassName('racers')
-console.log(chosenRacer, 'works');
+// let chosenRacer = document.getElementsByClassName('racers')
+// console.log(chosenRacer, 'works');
 
 let startLine = document.querySelector('.starting-line');
 // console.log(startLine, 'works');
@@ -17,13 +17,13 @@ let finishLine = document.querySelector('.finish-line');
 // console.log(finishLine, 'works');
 
 let startRace = document.querySelector('#start-race');
-console.log(startRace, 'works')
+// console.log(startRace, 'works')
 
 let betValueInput = document.querySelector('#bet-value-input');
 // console.log(betValueInput,'works')
 
 let racersOnTrack = document.getElementsByClassName('racers-on-track')
-console.log(racersOnTrack, 'works')
+// console.log(racersOnTrack, 'works')
 
 let racer1 = document.getElementById('racer-one')
 // console.log(racer1)
@@ -38,7 +38,10 @@ let firstRacer = document.querySelector('#first-racer');
 
 let secondRacer = document.querySelector('#second-racer')
 // console.log (secondRacer, 'works')
-
+let thirdRacer = document.querySelector('#third-racer')
+// console.log(thirdRacer)
+let fourthRacer = document.querySelector('#fourth-racer')
+// console.log(fourthRacer)
 let placeBet = document.querySelector('#place-bet')
 // console.log(placeBet)
 let wagerWinnings = document.querySelector('#check-if-won')
@@ -46,7 +49,7 @@ let wagerWinnings = document.querySelector('#check-if-won')
 let bankTotal = 100
 
 let winningsCalculator = 0
-let winningRacer = ""
+let winningRacer = " "
 
 
 // console.log(wagerWinnings, 'this works')
@@ -66,7 +69,10 @@ function getBetValue(){
     racer2.style.transform = "translateX(0px)"
     racer3.style.transform = "translateX(0px)"
     racer4.style.transform = "translateX(0px)" 
-    firstRacer.style.backgroundColor = 'none'
+    firstRacer.style.backgroundColor = 'white'
+    secondRacer.style.backgroundColor = 'white'
+    thirdRacer.style.backgroundColor = 'white'
+    fourthRacer.style.backgroundColor = 'white'
     let wager = betValueInput.value
 //    console.log(wager)
     bankTotal -= wager
@@ -79,7 +85,8 @@ function getBetValue(){
 function betWinnings () {
 
     // if (winningRacer === chosenRacer)
-    let winnings = betValueInput.value * winningsCalculator // this will be winningRacer odds taken from innerHTML of racer  though I could just set the 
+    let winnings = betValueInput.value * winningsCalculator 
+    // this will be winningRacer odds taken from innerHTML of racer  though I could just set the 
     // total multiplication value of odds to be equal to number of racers number of racers = odds of being correct
     bankTotal += winnings
     pointBankTotal.innerHTML = bankTotal
@@ -100,7 +107,9 @@ function betWinnings () {
 // }
 // send this variable to the global scope so i can use it as a comparison for 
   
-function racingSpeed () {//After MVP perhaps if I create an empty array and have random numbers pushed into it I can prevent the same number from showing up
+function racingSpeed () {
+    //After MVP perhaps if I create an empty array and have random numbers pushed into it 
+    //I can prevent the same number from showing up
     let speed1 =Math.floor(Math.random()*10) + 1
     console.log(speed1)
     let speed2 =Math.floor(Math.random()*10) + 1
@@ -121,8 +130,8 @@ function racingSpeed () {//After MVP perhaps if I create an empty array and have
     if (speed2 < speed1 && speed2 < speed3 && speed2 < speed4) return winningsCalculator = 3, winningRacer = "3"
     if (speed3 < speed1 && speed3 < speed2 && speed3 < speed4) return winningsCalculator = 4, winningRacer = "4"
     if (speed4 < speed1 && speed4 < speed2 && speed4 < speed3) return winningsCalculator = 5, winningRacer = "5"
-    console.log(winningsCalculator)
-    console.log(winningRacer)
+    console.log(winningsCalculator) //not working why?
+    console.log(winningRacer) //not working why?
 }
 
 function gameOver (){
@@ -147,16 +156,52 @@ startRace.addEventListener('click', racingSpeed)
 wagerWinnings.addEventListener('click', betWinnings)
 
 
+// function chooseRacer (event){
+//     event = addEventListener('click', () => {
+//     if (event === firstRacer) return firstRacer.style.backgroundColor = 'yellow' 
+//     if (event === secondRacer) return secondRacer.style.backgroundColor = 'yellow'
+//     if (event === thirdRacer)  return thirdRacer.style.backgroundColor = 'yellow'
+//     if (event === fourthRacer) return fourthRacer.style.backgroundColor ='yellow'
+// })
+// }
+// chooseRacer()
+// chosenRacer.addEventListener('click', chooseRacer)
 
-// chosenRacer.forEach
+// function chooseRacer (racer) {
+//     for (let i = 0; i<chosenRacer.length; i++) {
+//         addEventListener('click', () => {
+//            chosenRacer[i].style.backgroundColor = 'yellow'
+//         })
+//     }
+// }
+//   chooseRacer()
 
-// firstRacer.addEventListener('click', () => {
-//     firstRacer.style.backgroundColor = 'yellow';
+//   chosenRacer.addEventListener('click', chosenRacer.forEach((racer) =>  {
+//       racer.style.backgroundColor = "yellow"
+//   }))      
+
 //     // racer1.style.transform = 
 // })
 //why can I not get this to work for all racers it only works for individual racer id not the class!!!!
 
-startRace.addEventListener('click', () => {
-    // racer1.style.transition 
+// startRace.addEventListener('click', () => {
+//     // racer1.style.transition 
     
-}) //finally figured it out now to make it random transitionDurations 
+// }) //finally figured it out now to make it random transitionDurations 
+
+function chooseRacer(){
+    firstRacer.addEventListener('click', () => {
+        firstRacer.style.backgroundColor = 'yellow'
+    })
+    secondRacer.addEventListener('click', () => {
+        secondRacer.style.backgroundColor = 'yellow'
+    })
+    thirdRacer.addEventListener('click', () => {
+        thirdRacer.style.backgroundColor = 'yellow'
+    })
+    fourthRacer.addEventListener('click', () => {
+        fourthRacer.style.backgroundColor = 'yellow'
+    })
+}
+
+chooseRacer()
