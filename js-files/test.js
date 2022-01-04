@@ -69,10 +69,7 @@ function getBetValue(){
     racer2.style.transform = "translateX(0px)"
     racer3.style.transform = "translateX(0px)"
     racer4.style.transform = "translateX(0px)" 
-    firstRacer.style.backgroundColor = 'white'
-    secondRacer.style.backgroundColor = 'white'
-    thirdRacer.style.backgroundColor = 'white'
-    fourthRacer.style.backgroundColor = 'white'
+  
     let wager = betValueInput.value
 //    console.log(wager)
     bankTotal -= wager
@@ -83,8 +80,11 @@ function getBetValue(){
 }
 // getBetValue()
 function betWinnings () {
-
-    // if (winningRacer === chosenRacer)
+    firstRacer.style.backgroundColor = 'white'
+    secondRacer.style.backgroundColor = 'white'
+    thirdRacer.style.backgroundColor = 'white'
+    fourthRacer.style.backgroundColor = 'white'
+    if (winningRacer === chosenRacer) {
     let winnings = betValueInput.value * winningsCalculator 
     // this will be winningRacer odds taken from innerHTML of racer  though I could just set the 
     // total multiplication value of odds to be equal to number of racers number of racers = odds of being correct
@@ -93,11 +93,12 @@ function betWinnings () {
     let winningMessage = document.createElement("h3")
     winningMessage.innerHTML = `Congratulations your winnings are ${winnings} points`
     document.body.appendChild(winningMessage)
-    //if (winningRacer !== chosenRacer) 
-    // return 
-    // let losingMessage = document.createElement('h3')
-    // losingMessage.innerHTML = 'You have lost'
-    // document.body.appendChild(losingMessage)
+    }
+    if (winningRacer !== chosenRacer) {
+    let losingMessage = document.createElement('h3')
+    losingMessage.innerHTML = 'You have lost your money'
+    document.body.appendChild(losingMessage)
+    }
 }
 
 // function winningRacer () { //winningsCalculator value is set to 0 pass an integer to that value based upon boolean
@@ -143,7 +144,7 @@ function racingSpeed () {
         return winningsCalculator = 5, winningRacer = "5"
         }
     // console.log(winningsCalculator) //not working why?// needs to be in each if statement before return
-    // console.log(winningRacer) //not working why?
+    // console.log(winningRacer) //not working why? // needs to be in each if statement before return
 }
 
 function gameOver (){
