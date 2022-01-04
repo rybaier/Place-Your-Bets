@@ -7,7 +7,7 @@ let pointBankDisplay = document.querySelector('#point-bank-display');
 let pointBankTotal = document.querySelector('#point-bank-total')
 // console.log(pointBankTotal, 'works')
 
-let chosenRacer = document.querySelectorAll('.racers')
+// let chosenRacer = document.querySelectorAll('.racers')
 // console.log(chosenRacer, 'works');
 
 let startLine = document.querySelector('.starting-line');
@@ -26,10 +26,10 @@ let racersOnTrack = document.getElementsByClassName('racers-on-track')
 console.log(racersOnTrack, 'works')
 
 let racer1 = document.getElementById('racer-one')
-console.log(racer1)
+// console.log(racer1)
 
 let racer2 = document.getElementById('racer-two')
-console.log(racer2)
+// console.log(racer2)
 let racer3 = document.getElementById('racer-three')
 let racer4 = document.getElementById('racer-four')
 
@@ -41,10 +41,11 @@ let secondRacer = document.querySelector('#second-racer')
 
 let placeBet = document.querySelector('#place-bet')
 // console.log(placeBet)
+let wagerWinnings = document.querySelector('#check-if-won')
 
 let bankTotal = 100
 
-let wagerWinnings = document.querySelector('#check-if-won')
+
 
 
 // console.log(wagerWinnings, 'this works')
@@ -56,7 +57,7 @@ let wagerWinnings = document.querySelector('#check-if-won')
 //FUNCTIONS
 
 function getBetValue(){
-      racer1.style.transitionDuration = `0.5s`
+    racer1.style.transitionDuration = `0.5s`
     racer2.style.transitionDuration = `0.5s`
     racer3.style.transitionDuration = `0.5s`
     racer4.style.transitionDuration = `0.5s`
@@ -64,6 +65,7 @@ function getBetValue(){
     racer2.style.transform = "translateX(0px)"
     racer3.style.transform = "translateX(0px)"
     racer4.style.transform = "translateX(0px)" 
+    firstRacer.style.backgroundColor = 'none'
     let wager = betValueInput.value
 //    console.log(wager)
     bankTotal -= wager
@@ -91,9 +93,11 @@ function betWinnings () {
 }
 
 // function winningRacer () {
-//     if 
+// using speed1-4 variables and conditionals I need to return a variable that can be passed 
+// into the betWinnings function or i need to write this function inside of racewinner that passes boolean 
+// value into a global scope variable that will allow me to access it for the betWinnings function! 
 // }
-
+  
 function racingSpeed () {//After MVP perhaps if I create an empty array and have random numbers pushed into it I can prevent the same number from showing up
     let speed1 =Math.floor(Math.random()*7) + 1
     let speed2 =Math.floor(Math.random()*7) + 1
@@ -122,6 +126,8 @@ gameOver()
 //try it with a stack that follows this document.body.remove() imgSource = document.createElement('img') 
 // imgSource.attribute(gif file) document.body.append(img source)
 // 
+
+
 //EVENT LISTENERS
 
 placeBet.addEventListener('click', getBetValue)
@@ -131,7 +137,6 @@ wagerWinnings.addEventListener('click', betWinnings)
 firstRacer.addEventListener('click', () => {
     firstRacer.style.backgroundColor = 'yellow';
     // racer1.style.transform = 
-
 })
 //why can I not get this to work for all racers it only works for individual racer id not the class!!!!
 
