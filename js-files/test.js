@@ -7,8 +7,8 @@ let pointBankDisplay = document.querySelector('#point-bank-display');
 let pointBankTotal = document.querySelector('#point-bank-total')
 // console.log(pointBankTotal, 'works')
 
-// let chosenRacer = document.querySelectorAll('.racers')
-// console.log(chosenRacer, 'works');
+let chosenRacer = document.getElementsByClassName('racers')
+console.log(chosenRacer, 'works');
 
 let startLine = document.querySelector('.starting-line');
 // console.log(startLine, 'works');
@@ -46,7 +46,7 @@ let wagerWinnings = document.querySelector('#check-if-won')
 let bankTotal = 100
 
 let winningsCalculator = 0
-
+let winningRacer = ""
 
 
 // console.log(wagerWinnings, 'this works')
@@ -98,15 +98,16 @@ function betWinnings () {
 // into the betWinnings function----NO or i need to write this function inside of racewinner that passes boolean 
 // value into a global scope variable that will allow me to access it for the betWinnings function! ---YES
 // }
+// send this variable to the global scope so i can use it as a comparison for 
   
 function racingSpeed () {//After MVP perhaps if I create an empty array and have random numbers pushed into it I can prevent the same number from showing up
-    let speed1 =Math.floor(Math.random()*7) + 1
+    let speed1 =Math.floor(Math.random()*10) + 1
     console.log(speed1)
-    let speed2 =Math.floor(Math.random()*7) + 1
+    let speed2 =Math.floor(Math.random()*10) + 1
     console.log(speed2)
-    let speed3 =Math.floor(Math.random()*7) + 1
+    let speed3 =Math.floor(Math.random()*10) + 1
     console.log(speed3)
-    let speed4 =Math.floor(Math.random()*7) + 1
+    let speed4 =Math.floor(Math.random()*10) + 1
     console.log(speed4)
     racer1.style.transitionDuration = `${speed1}s`
     racer2.style.transitionDuration = `${speed2}s`
@@ -116,11 +117,12 @@ function racingSpeed () {//After MVP perhaps if I create an empty array and have
     racer2.style.transform = "translateX(1400px)"
     racer3.style.transform = "translateX(1400px)"
     racer4.style.transform = "translateX(1400px)"
-    if (speed1 > speed2 && speed1 > speed3 && speed1 > speed4) return winningsCalculator = 2
-    if (speed2 > speed1 && speed2 > speed3 && speed2 > speed4) return winningsCalculator = 3
-    if (speed3 > speed1 && speed3 > speed2 && speed3 > speed4) return winningsCalculator = 4
-    if (speed4 > speed1 && speed4 > speed2 && speed4 > speed3) return winningsCalculator = 5
+    if (speed1 < speed2 && speed1 < speed3 && speed1 < speed4) return winningsCalculator = 2, winningRacer = "2"
+    if (speed2 < speed1 && speed2 < speed3 && speed2 < speed4) return winningsCalculator = 3, winningRacer = "3"
+    if (speed3 < speed1 && speed3 < speed2 && speed3 < speed4) return winningsCalculator = 4, winningRacer = "4"
+    if (speed4 < speed1 && speed4 < speed2 && speed4 < speed3) return winningsCalculator = 5, winningRacer = "5"
     console.log(winningsCalculator)
+    console.log(winningRacer)
 }
 
 function gameOver (){
@@ -144,10 +146,14 @@ placeBet.addEventListener('click', getBetValue)
 startRace.addEventListener('click', racingSpeed)
 wagerWinnings.addEventListener('click', betWinnings)
 
-firstRacer.addEventListener('click', () => {
-    firstRacer.style.backgroundColor = 'yellow';
-    // racer1.style.transform = 
-})
+
+
+// chosenRacer.forEach
+
+// firstRacer.addEventListener('click', () => {
+//     firstRacer.style.backgroundColor = 'yellow';
+//     // racer1.style.transform = 
+// })
 //why can I not get this to work for all racers it only works for individual racer id not the class!!!!
 
 startRace.addEventListener('click', () => {
