@@ -26,14 +26,15 @@
         // JS
 //CHECK            // attached to placeBet button event listener
 //CHECK                // event triggers function for point bank value subtraction 
+//CHECK                 //event triggers reset of racers to starting gates
                 // (after MVP) event moves input value to betValueDisplay 
     //players's buttons for chosen odds 
 //CHECK       // create button class for odds for JS variable reference
 //CHECK        // create button id's for each set of odds 2-1,3-1,4-1, etc. JS const variable reference
         // JS
             // button id attached to event listener that highlights chosen odds (button)
-//CHECK                // event triggers color change for button (yellow)
-                    //upon end of race event button color reset to original
+//CHECK         // event triggers color change for button (yellow)
+                    //upon end of race event button color reset to original (see if you won button )
                 // event locks in chosen button id for betWinnings return 
             // (after MVP) button class attached to placeBet button event listener 
                     // event locks in chosen button id for betWinnings return  
@@ -41,10 +42,10 @@
     //start race button with event listener that activates Random speed function
 //CHECK        // create button id for JS variable reference startRace
         // JS
-//CHECK            // button id attached to event listener 
-//CHECK                //event triggers randomSpeed generate function 
-//CHECK                    //randomSpeed function will set random speed that each square crosses screen
-//CHECK                        //function will be applied to button id variable
+//CHECK     // button id attached to event listener 
+//CHECK          //event triggers randomSpeed generate function 
+//CHECK             //randomSpeed function will set random speed that each square crosses screen
+//CHECK             //function will be applied to button id variable for random generation for each 
     //start line
 //CHECK        // create div class for start line for squares  for JS variable reference startLine
 //CHECK        //create div id for each square for JS variable reference
@@ -53,7 +54,7 @@
             // if function for square class to cross finish line 
                 //triggers raceWinner message 
                 //if winning square id matches chosen square id 
-                //do this by css style position boolean
+                //do this by css style transition boolean
                     //triggers betWinning function that multiplys betValue input by chosen odds
                         //betWinning point value added to the player's point bank total  
                 //if winning square id does not match chosen square id 
@@ -105,6 +106,7 @@
 // on click add a css class thats doing something 
 //different animations for different transitions 
 
-//Z index
+//Z index is what I've been needing for so long! it creates an order that is similar to layers in photoediting software
+//the higher the number the more in the front it is.
  //need to figure out css and how to get squares to move for this functionto be built 
     //have switched to canvas animation this may be better served in that file

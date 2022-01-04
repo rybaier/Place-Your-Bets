@@ -45,6 +45,7 @@ let wagerWinnings = document.querySelector('#check-if-won')
 
 let bankTotal = 100
 
+let winningsCalculator = 0
 
 
 
@@ -78,7 +79,7 @@ function getBetValue(){
 function betWinnings () {
 
     // if (winningRacer === chosenRacer)
-    let winnings = betValueInput.value * 2 // this will be winningRacer odds taken from innerHTML of racer  though I could just set the 
+    let winnings = betValueInput.value * winningsCalculator // this will be winningRacer odds taken from innerHTML of racer  though I could just set the 
     // total multiplication value of odds to be equal to number of racers number of racers = odds of being correct
     bankTotal += winnings
     pointBankTotal.innerHTML = bankTotal
@@ -92,17 +93,21 @@ function betWinnings () {
     // document.body.appendChild(losingMessage)
 }
 
-// function winningRacer () {
+// function winningRacer () { //winningsCalculator value is set to 0 pass an integer to that value based upon boolean
 // using speed1-4 variables and conditionals I need to return a variable that can be passed 
-// into the betWinnings function or i need to write this function inside of racewinner that passes boolean 
-// value into a global scope variable that will allow me to access it for the betWinnings function! 
+// into the betWinnings function----NO or i need to write this function inside of racewinner that passes boolean 
+// value into a global scope variable that will allow me to access it for the betWinnings function! ---YES
 // }
   
 function racingSpeed () {//After MVP perhaps if I create an empty array and have random numbers pushed into it I can prevent the same number from showing up
     let speed1 =Math.floor(Math.random()*7) + 1
+    console.log(speed1)
     let speed2 =Math.floor(Math.random()*7) + 1
+    console.log(speed2)
     let speed3 =Math.floor(Math.random()*7) + 1
+    console.log(speed3)
     let speed4 =Math.floor(Math.random()*7) + 1
+    console.log(speed4)
     racer1.style.transitionDuration = `${speed1}s`
     racer2.style.transitionDuration = `${speed2}s`
     racer3.style.transitionDuration = `${speed3}s`
@@ -111,6 +116,11 @@ function racingSpeed () {//After MVP perhaps if I create an empty array and have
     racer2.style.transform = "translateX(1400px)"
     racer3.style.transform = "translateX(1400px)"
     racer4.style.transform = "translateX(1400px)"
+    if (speed1 > speed2 && speed1 > speed3 && speed1 > speed4) return winningsCalculator = 2
+    if (speed2 > speed1 && speed2 > speed3 && speed2 > speed4) return winningsCalculator = 3
+    if (speed3 > speed1 && speed3 > speed2 && speed3 > speed4) return winningsCalculator = 4
+    if (speed4 > speed1 && speed4 > speed2 && speed4 > speed3) return winningsCalculator = 5
+    console.log(winningsCalculator)
 }
 
 function gameOver (){
