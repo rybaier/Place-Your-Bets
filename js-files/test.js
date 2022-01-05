@@ -53,6 +53,8 @@ let fourthRacer = document.querySelector('#fourth-racer')
 let placeBet = document.querySelector('#place-bet')
 // console.log(placeBet)
 let wagerWinnings = document.querySelector('#check-if-won')
+let printMessage = document.querySelector('#messages')
+console.log(printMessage)
 
 let bankTotal = 100
 
@@ -100,16 +102,14 @@ function betWinnings () {
     // total multiplication value of odds to be equal to number of racers number of racers = odds of being correct
     bankTotal += winnings
     pointBankTotal.innerHTML = bankTotal
-    let winningMessage = document.createElement("h3")
-    winningMessage.innerHTML = `Congratulations your winnings are ${winnings} points`
-    message = document.body.appendChild(winningMessage)
-    return message 
+    let winningMessage = `Congratulations your winnings are ${winnings} points`
+    printMessage.innerHTML = winningMessage
+    return printMessage 
     }
     if (winningRacer !== chosenRacer) {
-    let losingMessage = document.createElement('h3')
-    losingMessage.innerHTML = 'You have lost your money'
-    message = document.body.appendChild(losingMessage)
-    return message
+    let losingMessage = 'You have lost your money'
+    printMessage.innerHTML = losingMessage 
+    return printMessage
     }
 }
 
