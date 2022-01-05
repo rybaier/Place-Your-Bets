@@ -1,3 +1,6 @@
+//This avenue for animation was discarded everything now done in CSS 
+//return in future to see if I can get it working with canvas and context
+
 // const raceTrack = document.getElementById("racetrack")
 // const rtCtx = raceTrack.getContext('2d')
 

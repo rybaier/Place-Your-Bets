@@ -1,6 +1,14 @@
 // This will be where I build and test the code 
 
 //                  Variables
+let background = document.querySelector('#background')
+// console.log(background)
+let displays = document.querySelector('.displays')
+// console.log(displays)
+let betting = document.querySelector('.betting-selection')
+// console.log(betting)
+let gameOverGif = document.querySelector('#gameover')
+// console.log(gameOverGif)
 let pointBankDisplay = document.querySelector('#point-bank-display');
 // console.log(pointBankDisplay, 'works');
 
@@ -112,13 +120,13 @@ function racingSpeed () {
     //After MVP perhaps if I create an empty array and have random numbers pushed into it 
     //I can prevent the same number from showing up
     let speed1 =Math.floor(Math.random()*10) + 1
-    console.log(speed1)
+    // console.log(speed1)
     let speed2 =Math.floor(Math.random()*10) + 1
-    console.log(speed2)
+    // console.log(speed2)
     let speed3 =Math.floor(Math.random()*10) + 1
-    console.log(speed3)
+    // console.log(speed3)
     let speed4 =Math.floor(Math.random()*10) + 1
-    console.log(speed4)
+    // console.log(speed4)
     racer1.style.transitionDuration = `${speed1}s`
     racer2.style.transitionDuration = `${speed2}s`
     racer3.style.transitionDuration = `${speed3}s`
@@ -128,39 +136,45 @@ function racingSpeed () {
     racer3.style.transform = "translateX(1400px)"
     racer4.style.transform = "translateX(1400px)"
     if (speed1 < speed2 && speed1 < speed3 && speed1 < speed4) {
-        console.log( winningsCalculator = 2, winningRacer = "2") 
+        // console.log( winningsCalculator = 2, winningRacer = "2") 
         return winningsCalculator = 2, winningRacer = "2"
     }
     if (speed2 < speed1 && speed2 < speed3 && speed2 < speed4) {
-        console.log(winningsCalculator = 3, winningRacer = "3")
+        // console.log(winningsCalculator = 3, winningRacer = "3")
         return winningsCalculator = 3, winningRacer = "3"
     }
     if (speed3 < speed1 && speed3 < speed2 && speed3 < speed4) {
-        console.log(winningsCalculator = 4, winningRacer = "4")
+        // console.log(winningsCalculator = 4, winningRacer = "4")
         return winningsCalculator = 4, winningRacer = "4"
     }
     if (speed4 < speed1 && speed4 < speed2 && speed4 < speed3) {
-        console.log (winningsCalculator = 5, winningRacer = "5")
+        // console.log (winningsCalculator = 5, winningRacer = "5")
         return winningsCalculator = 5, winningRacer = "5"
         }
     // console.log(winningsCalculator) //not working why?// needs to be in each if statement before return
     // console.log(winningRacer) //not working why? // needs to be in each if statement before return
 }
 
-function gameOver (){
-   let gameOverMessage = document.createElement("h3")
-   gameOverMessage.innerHTML ="You have no more money to bet. please refresh page to try again"
-    if (pointBankTotal.innerHTML < 0) {
-     return document.body.appendChild(gameOverMessage)
-    }
-    }
-gameOver()
+// function gameOver (){
+//    let gameOverMessage = document.createElement("h3")
+//    gameOverMessage.innerHTML ="You have no more money to bet. please refresh page to try again"
+//     if (pointBankTotal.innerHTML < 0) {
+//      return document.body.appendChild(gameOverMessage)
+//     }
+// }
+
 //this needs to trigger in a better way perhaps as a full message that blocks out the screen or have it display the gif
 //otherwises user can just keep betting into negative
 //try it with a stack that follows this document.body.remove() imgSource = document.createElement('img') 
 // imgSource.attribute(gif file) document.body.append(img source)
-// 
+//  I think opacity is the better option for this. have div class background opacity change to 0 and img opacity change to 1
 
+function gameOver (){
+    if (pointBankTotal.innerHTML < 0) {
+        return background.style.opacity = 0, displays.style.opacity = 0, betting.style.opacity = 0, gameOverGif.style.opacity = 1
+       } 
+    
+} 
 
 //EVENT LISTENERS
 

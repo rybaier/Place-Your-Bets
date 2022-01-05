@@ -15,51 +15,50 @@
 
 
 // How I am going to do  MVP
-    //player's point bank display
+//CHECK    //player's point bank display
 //CHECK       //create a div id for JS variable pointBankDisplay (trying html <label> for this)
 //CHECK           //100 as base value 
-        //JS
+//CHECK        //JS
 //CHECK            // no longer a function need for point bank start with 100 see html 
 //CHECK            // if function that triggers gameOver message when point bank drops below 0 
-    //player's input bet value     
+//CHECK    //player's input bet value     
 //CHECK        // create input field for JS variable reference
-        // JS
+//CHECK        // JS
 //CHECK            // attached to placeBet button event listener
 //CHECK                // event triggers function for point bank value subtraction 
 //CHECK                 //event triggers reset of racers to starting gates
                 // (after MVP) event moves input value to betValueDisplay 
-    //players's buttons for chosen odds 
+//CHECK    //players's buttons for chosen odds 
 //CHECK       // create button class for odds for JS variable reference
 //CHECK        // create button id's for each set of odds 2-1,3-1,4-1, etc. JS const variable reference
-        // JS
-            // button id attached to event listener that highlights chosen odds (button)
+//CHECK        // JS
+//CHECK            // button id attached to event listener that highlights chosen odds (button)
 //CHECK         // event triggers color change for button (yellow)
-                    //upon end of race event button color reset to original (see if you won button )
-                // event locks in chosen button id for betWinnings return 
+//CHECK                    //upon end of race event button color reset to original (see if you won button )
+//CHECK                // event locks in chosen button id for betWinnings return 
             // (after MVP) button class attached to placeBet button event listener 
                     // event locks in chosen button id for betWinnings return  
                     // event sends chosen button id to chosen square display
-    //start race button with event listener that activates Random speed function
+//CHECK    //start race button with event listener that activates Random speed function
 //CHECK        // create button id for JS variable reference startRace
-        // JS
+//CHECK        // JS
 //CHECK     // button id attached to event listener 
 //CHECK          //event triggers randomSpeed generate function 
 //CHECK             //randomSpeed function will set random speed that each square crosses screen
 //CHECK             //function will be applied to button id variable for random generation for each 
-    //start line
+//CHECK    //start line
 //CHECK        // create div class for start line for squares  for JS variable reference startLine
 //CHECK        //create div id for each square for JS variable reference
-    //finish line
+//CHECK    //finish line
 //CHECK        //create div class for finish line for JS variable reference finishLine
-            // if function for square class to cross finish line 
-                //triggers raceWinner message 
-                //if winning square id matches chosen square id 
-                //do this by css style transition boolean
-                    //triggers betWinning function that multiplys betValue input by chosen odds
-                        //betWinning point value added to the player's point bank total  
-                //if winning square id does not match chosen square id 
-                    // triggers lostBet message ('your square did not win try again')
-            
+//CHECK            // if function for square class to cross finish line 
+//CHECK                //if winning square id matches chosen square id 
+//CHECK                //do this by css style transition boolean---NO --- I did in javascript with variable chain
+//CHECK                    //triggers betWinning function that multiplys betValue input by chosen odds
+//CHECK                        //betWinning point value added to the player's point bank total  
+//CHECK                //if winning square id does not match chosen square id 
+//CHECK                    // triggers lostBet message ('your square did not win try again')
+                     // (after MVP) triggers raceWinner message 
 //CHECK    //game over message function
         //JS 
 //CHECK            //create function to create game over message that triggers when point bank reaches 0
