@@ -59,6 +59,7 @@ let bankTotal = 100
 let winningsCalculator = 0
 let winningRacer = " "
 let chosenRacer = " "
+let message = " "
 
 // console.log(wagerWinnings, 'this works')
 // let raceTrack = document.getElementsByClassName("racetrack") // moved to canvas file
@@ -77,6 +78,7 @@ function getBetValue(){
     racer2.style.transform = "translateX(0px)"
     racer3.style.transform = "translateX(0px)"
     racer4.style.transform = "translateX(0px)" 
+    
   
     let wager = betValueInput.value
 //    console.log(wager)
@@ -100,12 +102,14 @@ function betWinnings () {
     pointBankTotal.innerHTML = bankTotal
     let winningMessage = document.createElement("h3")
     winningMessage.innerHTML = `Congratulations your winnings are ${winnings} points`
-    document.body.appendChild(winningMessage)
+    message = document.body.appendChild(winningMessage)
+    return message 
     }
     if (winningRacer !== chosenRacer) {
     let losingMessage = document.createElement('h3')
     losingMessage.innerHTML = 'You have lost your money'
-    document.body.appendChild(losingMessage)
+    message = document.body.appendChild(losingMessage)
+    return message
     }
 }
 
@@ -170,7 +174,7 @@ function racingSpeed () {
 //  I think opacity is the better option for this. have div class background opacity change to 0 and img opacity change to 1
 
 function gameOver (){
-    if (pointBankTotal.innerHTML < 0) {
+    if (pointBankTotal.innerHTML < 1) {
         return background.style.opacity = 0, displays.style.opacity = 0, betting.style.opacity = 0, gameOverGif.style.opacity = 1
        } 
     

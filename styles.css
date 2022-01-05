@@ -30,12 +30,14 @@
     flex-direction: column;
     align-content: space-between;
     
+    
 }
 
 #racer-one {
     background-color: rgba(254, 7, 7, 0.838);
+    background-image: url("images /turtle.gif ");
     color: white;
-    text-align: center;
+    text-align: right;
     display: block;
     height: 50px;
     width: 50px;
@@ -46,9 +48,10 @@
 
 #racer-two {
     background-color: rgba(40, 7, 254, 0.838);
+    background-image: url("images /shark.gif ");
     display: block;
     color: white;
-    text-align: center;
+    text-align: right;
     height: 50px;
     width: 50px; 
     z-index: 3;
@@ -57,9 +60,10 @@
 }
 #racer-three {
     background-color: rgba(254, 184, 7, 0.838);
+    background-image: url("images /cat.gif ");
     display: block;
     color: white;
-    text-align: center;
+    text-align: right;
     height: 50px;
     width: 50px; 
     z-index: 3;
@@ -68,9 +72,10 @@
 }
 #racer-four {
     background-color: rgba(172, 7, 254, 0.838);
+    background-image: url("images /rabbit.gif ");
     display: block;
     color: white;
-    text-align: center;
+    text-align: right;
     height: 50px;
     width: 50px; 
     z-index: 3;
