@@ -13,24 +13,70 @@ h1{
     font-family: 'UnifrakturCook', cursive;
     font-size: 40px;
 }
-
+ 
 h3 {
     font-family: 'UnifrakturCook', cursive;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    right: auto;
 }
 
 #point-bank-display {
     position: absolute;
     right: 400px;
     display: inline-block;
+    background-color: skyblue;
+    border: 7px solid black;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+#point-bank-total {
+    position: absolute;
+    right: 300px;
+    display: inline-block;
+    background-color: skyblue;
+    border: 7px solid rgb(248, 243, 243);
+    border-radius: 10px;
+    width: 75px;
+    text-align: center;
+}
+
+#start-race{
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: chocolate;
+    color: black;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: medium;
+}
+#place-bet {
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: chocolate;
+    color: black;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: medium;
+}
+#check-if-won {
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: chocolate;
+    color: black;
+    font-family: 'UnifrakturCook', cursive;
+    font-size: medium;
 }
 /*
 .betting-selection{
 
 }
-#point-bank-total
-#start-race
-#place-bet
-#check-if-won
+
 #bet-value-input */
 #racetrack {
     background-color: rgb(72, 64, 33);
@@ -38,6 +84,8 @@ h3 {
     width: 1500px;
     display: flex;
     z-index: 0;
+    border: 3px solid white;
+    border-radius: 10px;
     
 }
 #starting-line {
@@ -47,6 +95,7 @@ h3 {
     height: 100%;
     width: 5%;
     z-index: 2;
+    border-radius: 9px;
     
 }
 #finish-line{
@@ -57,6 +106,7 @@ h3 {
     width: 5%;
     z-index: 2;
     color: white;
+    border-radius: 10px;
    
 }
 
