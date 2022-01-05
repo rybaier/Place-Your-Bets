@@ -1,5 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Poiret+One&family=UnifrakturCook:wght@700&display=swap');
+
+body {
+    background-color: rgb(110, 70, 123);
+}
+h1{
+    color:rgba(254, 7, 7, 0.838);
+    text-align: center;
+    font-size: 100px;
+    font-family: 'UnifrakturCook', cursive;
+}
+ h2{
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 40px;
+}
+
+h3 {
+    font-family: 'UnifrakturCook', cursive;
+}
+
+#point-bank-display {
+    position: absolute;
+    right: 400px;
+    display: inline-block;
+}
+/*
+.betting-selection{
+
+}
+#point-bank-total
+#start-race
+#place-bet
+#check-if-won
+#bet-value-input */
 #racetrack {
-    background-color: beige;
+    background-color: rgb(72, 64, 33);
     height: 200px;
     width: 1500px;
     display: flex;
@@ -22,6 +56,7 @@
     height: 100%;
     width: 5%;
     z-index: 2;
+    color: white;
    
 }
 

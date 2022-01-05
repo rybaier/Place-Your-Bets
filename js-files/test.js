@@ -59,9 +59,10 @@ console.log(printMessage)
 let bankTotal = 100
 
 let winningsCalculator = 0
-let winningRacer = " "
-let chosenRacer = " "
-let message = " "
+let winningRacer = ' '
+let chosenRacer = ' '
+let message = ' '
+let racerMessage = ' '
 
 // console.log(wagerWinnings, 'this works')
 // let raceTrack = document.getElementsByClassName("racetrack") // moved to canvas file
@@ -81,11 +82,13 @@ function getBetValue(){
     racer3.style.transform = "translateX(0px)"
     racer4.style.transform = "translateX(0px)" 
     
-  
     let wager = betValueInput.value
 //    console.log(wager)
     bankTotal -= wager
     pointBankTotal.innerHTML = bankTotal 
+    let betMessage = `You have wagered ${betValueInput.value} points`
+    printMessage.innerHTML = betMessage
+    return printMessage
    
     gameOver()
     // console.log(bankTotal) 
@@ -123,13 +126,14 @@ function betWinnings () {
 function racingSpeed () {
     //After MVP perhaps if I create an empty array and have random numbers pushed into it 
     //I can prevent the same number from showing up
-    let speed1 =Math.floor(Math.random()*10) + 1
+    
+    let speed1 =Math.floor(Math.random()*7) + 1
     // console.log(speed1)
-    let speed2 =Math.floor(Math.random()*10) + 1
+    let speed2 =Math.floor(Math.random()*8) + 1
     // console.log(speed2)
-    let speed3 =Math.floor(Math.random()*10) + 1
+    let speed3 =Math.floor(Math.random()*12) + 1
     // console.log(speed3)
-    let speed4 =Math.floor(Math.random()*10) + 1
+    let speed4 =Math.floor(Math.random()*15) + 1
     // console.log(speed4)
     racer1.style.transitionDuration = `${speed1}s`
     racer2.style.transitionDuration = `${speed2}s`
@@ -155,6 +159,8 @@ function racingSpeed () {
         // console.log (winningsCalculator = 5, winningRacer = "5")
         return winningsCalculator = 5, winningRacer = "5"
         }
+        
+   
     // console.log(winningsCalculator) //not working why?// needs to be in each if statement before return
     // console.log(winningRacer) //not working why? // needs to be in each if statement before return
 }
@@ -225,21 +231,29 @@ function chooseRacer(){
         firstRacer.style.backgroundColor = 'yellow'
         chosenRacer = firstRacer.innerHTML
         console.log (chosenRacer)
+        printMessage.innerHTML = 'You have chosen the Turtle as your racer'
+        return printMessage
     })
     secondRacer.addEventListener('click', () => {
         secondRacer.style.backgroundColor = 'yellow'
         chosenRacer = secondRacer.innerHTML
         console.log (chosenRacer)
+        printMessage.innerHTML = 'You have chosen the Shark as your racer'
+        return printMessage
     })
     thirdRacer.addEventListener('click', () => {
         thirdRacer.style.backgroundColor = 'yellow'
         chosenRacer = thirdRacer.innerHTML
         console.log (chosenRacer)
+        printMessage.innerHTML = 'You have chosen the Cat as your racer'
+        return printMessage
     })
     fourthRacer.addEventListener('click', () => {
         fourthRacer.style.backgroundColor = 'yellow'
         chosenRacer = fourthRacer.innerHTML
         console.log (chosenRacer)
+        printMessage.innerHTML = 'You have chosen the Rabbit as your racer'
+        return printMessage
     })
 }
 
