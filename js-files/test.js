@@ -88,7 +88,7 @@ function getBetValue(){
     pointBankTotal.innerHTML = bankTotal 
     let betMessage = `You have wagered ${betValueInput.value} points`
     printMessage.innerHTML = betMessage
-    return printMessage
+     printMessage
    
     gameOver()
     // console.log(bankTotal) 
@@ -165,13 +165,7 @@ function racingSpeed () {
     // console.log(winningRacer) //not working why? // needs to be in each if statement before return
 }
 
-// function gameOver (){
-//    let gameOverMessage = document.createElement("h3")
-//    gameOverMessage.innerHTML ="You have no more money to bet. please refresh page to try again"
-//     if (pointBankTotal.innerHTML < 0) {
-//      return document.body.appendChild(gameOverMessage)
-//     }
-// }
+
 
 //this needs to trigger in a better way perhaps as a full message that blocks out the screen or have it display the gif
 //otherwises user can just keep betting into negative
@@ -181,7 +175,11 @@ function racingSpeed () {
 
 function gameOver (){
     if (pointBankTotal.innerHTML < 1) {
-        return background.style.opacity = 0, displays.style.opacity = 0, betting.style.opacity = 0, gameOverGif.style.opacity = 1
+         background.style.opacity = 0, displays.style.opacity = 0, 
+         betting.style.opacity = 0, gameOverGif.style.opacity = 1,
+        gameOverMessage = "s", printMessage.innerHTML = gameOverMessage,
+        printMessage
+
        } 
     
 } 

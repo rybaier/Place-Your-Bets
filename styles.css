@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Poiret+One&family=UnifrakturCook:wght@700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=UnifrakturCook:wght@700&display=swap');
 body {
     background-color: rgb(110, 70, 123);
 }
@@ -10,8 +10,8 @@ h1{
     font-family: 'UnifrakturCook', cursive;
 }
  h2{
-    font-family: 'UnifrakturCook', cursive;
-    font-size: 40px;
+    font-family: 'UnifrakturCook', cursive; 
+        font-size: 40px;
 }
  
 h3 {
@@ -25,12 +25,12 @@ h3 {
 
 #point-bank-display {
     position: absolute;
-    right: 400px;
+    right: 420px;
     display: inline-block;
     background-color: skyblue;
     border: 7px solid black;
     border-radius: 10px;
-    width: 300px;
+    width: 250px;
     text-align: center;
 }
 
@@ -41,7 +41,7 @@ h3 {
     background-color: skyblue;
     border: 7px solid rgb(248, 243, 243);
     border-radius: 10px;
-    width: 75px;
+    width: 85px;
     text-align: center;
 }
 
@@ -51,8 +51,12 @@ h3 {
     border-radius: 25px;
     background-color: chocolate;
     color: black;
-    font-family: 'UnifrakturCook', cursive;
+    font-family: 'Press Start 2P', cursive;
     font-size: medium;
+    position: relative;
+    top: 50px;
+    left: 280px;
+
 }
 #place-bet {
     width: 100px;
@@ -60,24 +64,54 @@ h3 {
     border-radius: 25px;
     background-color: chocolate;
     color: black;
-    font-family: 'UnifrakturCook', cursive;
+    font-family: 'Press Start 2P', cursive;
     font-size: medium;
+    position:relative;
+    top: 50px;
+    left: 350px;
 }
 #check-if-won {
-    width: 100px;
+    width: 120px;
     height: 50px;
     border-radius: 25px;
     background-color: chocolate;
     color: black;
-    font-family: 'UnifrakturCook', cursive;
+    font-family: 'Press Start 2P', cursive;
     font-size: medium;
+    position: relative;
+    top: 110px;
+    left: 700px;
+
 }
+
+.racers {
+    width: 50px;
+    height: 30px;
+    background-color: white;
+    position: relative;
+    top: 100px;
+    right: 325px;
+    margin: 20px;
+    font-family: 'Press Start 2P', cursive;
+    
+}
+
+#bet-value-input{
+    font-family: 'Press Start 2P', cursive;
+    position: relative;
+    top: 200px;
+    left: 75px;
+    font-size: 20px;
+    text-align: center;
+
+
+
+}
+
 /*
 .betting-selection{
 
-}
-
-#bet-value-input */
+} */
 #racetrack {
     background-color: rgb(72, 64, 33);
     height: 200px;
@@ -168,14 +202,11 @@ h3 {
     right: 50px;
 }
 
-.racers {
-    background-color: white;
-}
 
 #gameover {
     opacity: 0;
     position: absolute;
-    top: 20px;
+    top: 200px;
     right: 50%;
     
 }
