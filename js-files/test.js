@@ -165,8 +165,6 @@ function racingSpeed () {
     // console.log(winningRacer) //not working why? // needs to be in each if statement before return
 }
 
-
-
 //this needs to trigger in a better way perhaps as a full message that blocks out the screen or have it display the gif
 //otherwises user can just keep betting into negative
 //try it with a stack that follows this document.body.remove() imgSource = document.createElement('img') 
@@ -177,9 +175,8 @@ function gameOver (){
     if (pointBankTotal.innerHTML < 1) {
          background.style.opacity = 0, displays.style.opacity = 0, 
          betting.style.opacity = 0, gameOverGif.style.opacity = 1,
-        gameOverMessage = "s", printMessage.innerHTML = gameOverMessage,
-        printMessage
-
+         gameOverMessage = 'You have gambled away your last point', 
+         printMessage.innerHTML = gameOverMessage, printMessage
        } 
     
 } 

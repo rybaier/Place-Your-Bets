@@ -24,8 +24,8 @@ h3 {
 }
 
 #point-bank-display {
-    position: absolute;
-    right: 420px;
+    position: relative;
+    left: 860px;
     display: inline-block;
     background-color: skyblue;
     border: 7px solid black;
@@ -35,8 +35,8 @@ h3 {
 }
 
 #point-bank-total {
-    position: absolute;
-    right: 300px;
+    position: relative;
+    left: 900px;
     display: inline-block;
     background-color: skyblue;
     border: 7px solid rgb(248, 243, 243);
@@ -54,8 +54,8 @@ h3 {
     font-family: 'Press Start 2P', cursive;
     font-size: medium;
     position: relative;
-    top: 50px;
-    left: 280px;
+    top: -25px;
+    left: 300px;
 
 }
 #place-bet {
@@ -67,8 +67,8 @@ h3 {
     font-family: 'Press Start 2P', cursive;
     font-size: medium;
     position:relative;
-    top: 50px;
-    left: 350px;
+    top: -25px;
+    left: 50px;
 }
 #check-if-won {
     width: 120px;
@@ -79,8 +79,8 @@ h3 {
     font-family: 'Press Start 2P', cursive;
     font-size: medium;
     position: relative;
-    top: 110px;
-    left: 700px;
+    top: 50px;
+    left: 350px;
 
 }
 
@@ -89,22 +89,22 @@ h3 {
     height: 30px;
     background-color: white;
     position: relative;
-    top: 100px;
+    top: -100px;
     right: 325px;
     margin: 20px;
     font-family: 'Press Start 2P', cursive;
+    border-radius: 10px;
     
 }
 
 #bet-value-input{
     font-family: 'Press Start 2P', cursive;
     position: relative;
-    top: 200px;
+    top: 20px;
     left: 75px;
     font-size: 20px;
     text-align: center;
-
-
+    border-radius:  25px;
 
 }
 
@@ -123,7 +123,8 @@ h3 {
     
 }
 #starting-line {
-    
+    position: relative;
+    right:71px;
     justify-self:flex-start;
     background-color: rgb(4, 167, 69);
     height: 100%;
@@ -134,15 +135,43 @@ h3 {
 }
 #finish-line{
     position: relative;
-    left: 1300px;
+    left: 1228px;
     background-color: black;
     height: 100%;
     width: 5%;
     z-index: 2;
     color: white;
     border-radius: 10px;
+    
    
 }
+#finish-text{
+    color: white;
+    transform:rotate(90deg);
+    width: 70px;
+    height: 175px;
+    position:relative;
+    left: 1025px;
+    bottom: 40px;
+    z-index: 2;
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
+
+    
+}
+#start-text{
+    color: white;
+    transform:rotate(-90deg);
+    width: 70px;
+    height: 175px;
+    position:relative;
+    top: 50px;
+    left: 130px;
+    z-index:2;
+    font-size: 30px;
+    font-family: 'Press Start 2P', cursive;
+}
+
 
 .racers-on-track{
     display: flex;
@@ -162,7 +191,7 @@ h3 {
     width: 50px;
     z-index: 3;
     position: relative;
-    right:50px;
+    right:120px;
 }
 
 #racer-two {
@@ -175,7 +204,7 @@ h3 {
     width: 50px; 
     z-index: 3;
     position: relative;
-    right: 50px;
+    right: 120px;
 }
 #racer-three {
     background-color: rgba(254, 184, 7, 0.838);
@@ -187,7 +216,7 @@ h3 {
     width: 50px; 
     z-index: 3;
     position: relative;
-    right: 50px;
+    right: 120px;
 }
 #racer-four {
     background-color: rgba(172, 7, 254, 0.838);
@@ -199,7 +228,7 @@ h3 {
     width: 50px; 
     z-index: 3;
     position: relative;
-    right: 50px;
+    right: 120px;
 }
 
 
@@ -207,6 +236,7 @@ h3 {
     opacity: 0;
     position: absolute;
     top: 200px;
-    right: 50%;
+    right: 550px;
+    
     
 }
