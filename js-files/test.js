@@ -67,8 +67,15 @@ let winningRacer = ' '
 let chosenRacer = ' '
 let message = ' '
 let racerMessage = ' '
-
-// console.log(wagerWinnings, 'this works')
+//SOUND EFFECTS 
+let audioTrack = new Audio ('sound effects /music_zapsplat_astro_race.mp3')
+audioTrack.play().loop
+let betAudio =  new Audio ('sound effects /zapsplat_foley_cash_register_ka_ching_001_44087.mp3')
+let winAudio = new Audio ('sound effects /cartoon_success_fanfair.mp3')
+let loseAudio = new Audio ('sound effects /cartoon_fail_trumpet_002.mp3')
+let raceAudio = new Audio ('sound effects /horserunning.mp3')
+let cheerAudio = new Audio ('sound effects /cheering.mp3')
+// // console.log(wagerWinnings, 'this works')
 // let raceTrack = document.getElementsByClassName("racetrack") // moved to canvas file
 // let racetrackContext = raceTrack.getContext('2d')
 // console.log(raceTrack, 'works')
@@ -77,6 +84,7 @@ let racerMessage = ' '
 //FUNCTIONS
 
 function getBetValue(){
+    betAudio.play()
     racer1.style.transitionDuration = `0.5s`
     racer2.style.transitionDuration = `0.5s`
     racer3.style.transitionDuration = `0.5s`
@@ -99,11 +107,13 @@ function getBetValue(){
 }
 // getBetValue()
 function betWinnings () {
+    
     firstRacer.style.backgroundColor = 'white'
     secondRacer.style.backgroundColor = 'white'
     thirdRacer.style.backgroundColor = 'white'
     fourthRacer.style.backgroundColor = 'white'
     if (winningRacer === chosenRacer) {
+    winAudio.play()
     let winnings = betValueInput.value * winningsCalculator 
     // this will be winningRacer odds taken from innerHTML of racer  though I could just set the 
     // total multiplication value of odds to be equal to number of racers number of racers = odds of being correct
@@ -114,6 +124,7 @@ function betWinnings () {
     return printMessage 
     }
     if (winningRacer !== chosenRacer) {
+        loseAudio.play()
     let losingMessage = 'You have lost your money'
     printMessage.innerHTML = losingMessage 
     return printMessage
@@ -122,7 +133,7 @@ function betWinnings () {
 
 // function winningRacer () { //winningsCalculator value is set to 0 pass an integer to that value based upon boolean
 // using speed1-4 variables and conditionals I need to return a variable that can be passed 
-// into the betWinnings function----NO or i need to write this function inside of racewinner that passes boolean 
+// into the betWinnings function----NO or i need to write this function inside of racingSpeed that passes boolean 
 // value into a global scope variable that will allow me to access it for the betWinnings function! ---YES
 // }
 // send this variable to the global scope so i can use it as a comparison for 
@@ -130,7 +141,8 @@ function betWinnings () {
 function racingSpeed () {
     //After MVP perhaps if I create an empty array and have random numbers pushed into it 
     //I can prevent the same number from showing up
-    
+    cheerAudio.play()
+    raceAudio.play()
     let speed1 =Math.floor(Math.random()*7) + 1
     // console.log(speed1)
     let speed2 =Math.floor(Math.random()*8) + 1
@@ -177,6 +189,7 @@ function racingSpeed () {
 
 function gameOver (){
     if (pointBankTotal.innerHTML < 1) {
+        loseAudio.play()
          background.style.opacity = 0, displays.style.opacity = 0, 
          betting.style.opacity = 0, gameOverGif.style.opacity = 1,
          gameOverMessage = 'You have gambled away your last point', 
