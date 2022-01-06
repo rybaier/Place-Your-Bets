@@ -45,7 +45,8 @@ let cheerAudio = new Audio ('sound effects /cheering.mp3')
 //FUNCTIONS
 function playAudio (){
     audioTrack.loop = true
-    audioTrack.play()
+   let audio = document.createElement('audio') 
+   audio = audioTrack.play()
 }
 playAudio ()
 function getBetValue(){
