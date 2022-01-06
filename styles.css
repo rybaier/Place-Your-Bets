@@ -70,6 +70,7 @@ h3 {
     top: -25px;
     left: 50px;
 }
+
 #check-if-won {
     width: 120px;
     height: 50px;
@@ -80,11 +81,9 @@ h3 {
     font-size: medium;
     position: relative;
     top: 50px;
-    left: 350px;
+    left: 0px;
 
 }
-
-
 
 .racers {
     width: 50px;
@@ -119,29 +118,12 @@ h3 {
     font-family: 'Press Start 2P', cursive;
     font-size: medium;
     position: relative;
+    top: 150px;
+    right:700px;
    
+}
 
-}
-#rules-text {
-    background-color: red;
-    color: white;
-    width: 1000px;
-    position:relative;
-    z-index: 10;
-    left: 300px;
-    bottom: 700px;
-    font-family: 'Press Start 2P', cursive;
-    text-align: left;
-    opacity: 0;
-}
-.title {
-    text-align: center;
-    font-size: 20px;
-}
-/*
-.betting-selection{
 
-} */
 #racetrack {
     background-color: rgb(72, 64, 33);
     height: 200px;
@@ -259,12 +241,31 @@ h3 {
     right: 120px;
 }
 
-
 #gameover {
     opacity: 0;
     position: absolute;
     top: 200px;
-    right: 550px;
-    
+    right: 550px;   
+}
+
+#rules-text {
+    background-color: red;
+    color: white;
+    width: 1000px;
+    position:relative;
+    left: 300px;
+    bottom: 600px;
+    font-family: 'Press Start 2P', cursive;
+    text-align: left;
+    display: none ;
+}
+.title {
+    text-align: center;
+    font-size: 20px;
+}
+#messages {
+    position: absolute;
+    top: 600px;
+    left: 550px;
     
 }

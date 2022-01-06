@@ -9,7 +9,7 @@ let gameRules = document.querySelector('#rules-text')
 // console.log(gameRules)
 let rules = document.querySelector('#rules')
 // console.log(rules)
-// let betting = document.querySelector('.betting-selection') // no longer needed haven't used it
+let betting = document.querySelector('.betting-selection') // no longer needed haven't used it
 // console.log(betting)
 let gameOverGif = document.querySelector('#gameover')
 // console.log(gameOverGif)
@@ -191,10 +191,10 @@ placeBet.addEventListener('click', getBetValue)
 startRace.addEventListener('click', racingSpeed)
 wagerWinnings.addEventListener('click', betWinnings)
 rules.addEventListener('mouseenter', () => {
-    gameRules.style.opacity = 1
+    gameRules.style.display = 'block'
 })
 rules.addEventListener('mouseleave', () => {
-    gameRules.style.opacity = 0
+    gameRules.style.display = 'none'
 })
 
 

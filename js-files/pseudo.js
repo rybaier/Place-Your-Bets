@@ -93,8 +93,11 @@
 //(after MVP) place bet button with event listener that takes input from bet value input
 //AFTER MVP IDEAS
     //add sound effects 
-    //change losing message to losing gif
-
+//CHECK    //change losing message to losing gif
+//CHECK    // add gifs to racers    
+    // add game rules button that displays rules on hover 
+        //use css to design rule box, highest z -index white background hide with opacity =0
+        // use JS for event listener hover to display rules change opacity to 1 
 
 //NOTES
 //<!--should i use progress for the squares? no. -->
