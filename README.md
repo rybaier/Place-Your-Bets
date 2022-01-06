@@ -1,4 +1,6 @@
 # Place-Your-Bets
+
+# Game Inspiration
 A browser game deisgned to simulate the horse racing gambling industry
 As a child my father taught the joys and heartaches of betting the horses, I thought it would be fun to design a simple game based upon that idea. Where the gambler (or user in this case) can experience all the emotions that are associated with it. 
   emotions like the following:
@@ -25,7 +27,14 @@ Rules of Place Your Bets!
 4. If the player does not choose the winner of the race, then the bet is lost and the user the player also loses the bet if there is a tie!
 5. The game is over if the player is forced to wager their last point
 
-Research References I used for building game
+
+
+# Languages
+- HTML5
+- CSS
+- JavaScript 
+
+# Research References I used for building game
 https://www.youtube.com/watch?v=eI9idPTT0c4
 https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
 https://www.youtube.com/watch?v=YszONjKpgg4
