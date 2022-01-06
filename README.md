@@ -27,7 +27,10 @@ Rules of Place Your Bets!
 4. If the player does not choose the winner of the race, then the bet is lost and the user the player also loses the bet if there is a tie!
 5. The game is over if the player is forced to wager their last point
 
-![alt text](images /screenshots-of-game/PYB-01-04-at-3.21.37-PM.png)
+![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/PYB-01-04-at-3.21.37-PM.png)
+![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/PYB-screenshot-1-1-10pm.png)
+![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/Screen-Shot-2022-01-05-at-3.53.14-PM.png)
+![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/Screen-Shot-2022-01-05-at-3.54.26-PM.png)
 
 # Languages
 - HTML5

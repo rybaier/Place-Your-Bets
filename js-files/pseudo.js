@@ -36,9 +36,9 @@
 //CHECK         // event triggers color change for button (yellow)
 //CHECK                    //upon end of race event button color reset to original (see if you won button )
 //CHECK                // event locks in chosen button id for betWinnings return 
-            // (after MVP) button class attached to placeBet button event listener 
-                    // event locks in chosen button id for betWinnings return  
-                    // event sends chosen button id to chosen square display
+//CHECK            // (after MVP) button class attached to placeBet button event listener 
+//CHECK                    // event locks in chosen button id for betWinnings return  
+//CHECK                    // event sends chosen button id to chosen square display
 //CHECK    //start race button with event listener that activates Random speed function
 //CHECK        // create button id for JS variable reference startRace
 //CHECK        // JS
@@ -62,7 +62,10 @@
 //CHECK    //game over message function
         //JS 
 //CHECK            //create function to create game over message that triggers when point bank reaches 0
-            //(after mvp) use gif in place of game over message
+//CHECK            //(after mvp) use gif in place of game over message
+        //AFTER MVP ideas
+//CHECK            // button sound effects
+            // background audio track
 
 //FUNCTIONS
     // function for point bank bet value subtraction
