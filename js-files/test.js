@@ -5,7 +5,11 @@ let background = document.querySelector('#background')
 // console.log(background)
 let displays = document.querySelector('.displays')
 // console.log(displays)
-let betting = document.querySelector('.betting-selection')
+let gameRules = document.querySelector('#rules-text')
+// console.log(gameRules)
+let rules = document.querySelector('#rules')
+// console.log(rules)
+// let betting = document.querySelector('.betting-selection') // no longer needed haven't used it
 // console.log(betting)
 let gameOverGif = document.querySelector('#gameover')
 // console.log(gameOverGif)
@@ -54,7 +58,7 @@ let placeBet = document.querySelector('#place-bet')
 // console.log(placeBet)
 let wagerWinnings = document.querySelector('#check-if-won')
 let printMessage = document.querySelector('#messages')
-console.log(printMessage)
+// console.log(printMessage)
 
 let bankTotal = 100
 
@@ -186,6 +190,12 @@ function gameOver (){
 placeBet.addEventListener('click', getBetValue)
 startRace.addEventListener('click', racingSpeed)
 wagerWinnings.addEventListener('click', betWinnings)
+rules.addEventListener('mouseenter', () => {
+    gameRules.style.opacity = 1
+})
+rules.addEventListener('mouseleave', () => {
+    gameRules.style.opacity = 0
+})
 
 
 // function chooseRacer (event){

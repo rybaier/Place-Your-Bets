@@ -132,6 +132,7 @@ h3 {
     bottom: 700px;
     font-family: 'Press Start 2P', cursive;
     text-align: left;
+    opacity: 0;
 }
 .title {
     text-align: center;
