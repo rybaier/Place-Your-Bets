@@ -70,7 +70,7 @@ let racerMessage = ' '
 //SOUND EFFECTS 
 let audioTrack = new Audio ('sound effects /music_zapsplat_astro_race.mp3')
 audioTrack.loop = true
-audioTrack.play()
+// audioTrack.play()
 let betAudio =  new Audio ('sound effects /zapsplat_foley_cash_register_ka_ching_001_44087.mp3')
 let winAudio = new Audio ('sound effects /cartoon_success_fanfair.mp3')
 let loseAudio = new Audio ('sound effects /cartoon_fail_trumpet_002.mp3')
@@ -142,7 +142,7 @@ function betWinnings () {
 function racingSpeed () {
     //After MVP perhaps if I create an empty array and have random numbers pushed into it 
     //I can prevent the same number from showing up
-    cheerAudio.play()
+    // cheerAudio.play()
     raceAudio.play()
     let speed1 =Math.floor(Math.random()*7) + 1
     // console.log(speed1)

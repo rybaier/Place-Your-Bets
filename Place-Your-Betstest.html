@@ -1,31 +1,39 @@
-<!--FINAL PRODUCT-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLace Your Bets</title>
+    <title>Place Your Bets</title>
     <link rel="stylesheet" href="styles.css" >
+  
 </head>
 <body>
     <div id = "background">
+    
         <h1>Place Your Bets!</h1>
+       
+        <!-- <canvas id = "racetrack" width="1000" height="200"></canvas> -->
         <!--racing HTML-->
         <div id = "racetrack">
-            <span id = "start-text">START</span>
-            <div id = "starting-line"></div>     
-                <div class = "racers-on-track">
-                    <div id = "racer-one">2</div> 
-                    <div id = "racer-two">3</div> 
-                    <div id = "racer-three">4</div> 
-                    <div id = "racer-four">5</div> 
-                </div>
+                <span id = "start-text">START</span>
+                <div id = "starting-line"></div> 
                 
-            <div id = "finish-line"></div>
+
+                  <div class = "racers-on-track">
+                     <div id = "racer-one">2</div> 
+                     <div id = "racer-two">3</div> 
+                     <div id = "racer-three">4</div> 
+                     <div id = "racer-four">5</div> 
+                  </div>
+                
+                  <div id = "finish-line"></div>
             <span id = "finish-text">FINISH</span>
-        </div> 
-       
+            </div> 
+           
+            
+            </div>       
+        </div>
         <!--betting HTML-->
         <div class = "displays">
             <h2 id ="point-bank-display">Total Points</h2>
@@ -63,8 +71,10 @@
         <p>1. If the player's choice matches then winner of the race, then the bet is paid out accordering to odds </p>
         <p>2. If the player does not choose the winner of the race, then the bet is lost and the user the player also lo0ses the bet if there is a tie!</p>
         <p>3. The game is over if the player is forced to wager their last point</p> 
-    </div>
+    </div> 
     <img id = "gameover" src="images /After every single race at the horse track today. - Imgur.gif">
-    <script src="js-files/app.js"></script>
+    <!-- <audio src="images /sound effects /music_zapsplat_astro_race.mp3">d</audio> -->
+  <!-- <script src ="js-files/canvas.js"></script>   -->
+  <script src="js-files/test.js"></script>   
 </body>
 </html>
