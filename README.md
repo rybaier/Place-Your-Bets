@@ -1,7 +1,7 @@
 # Place-Your-Bets
 A browser game deisgned to simulate the horse racing gambling industry
 As a child my father taught the joys and heartaches of betting the horses, I thought it would be fun to design a simple game based upon that idea. Where the gambler (or user in this case) can experience all the emotions that are associated with it. 
- # emotions like the following:
+  emotions like the following:
  - The hope of picking the right racer and winning your bet!
  - The anticipation for the race to start!
  - The excitement while the race is being run!
@@ -21,7 +21,9 @@ Rules of Place Your Bets!
     - Click the Start Race button and cheer for their racer. 
     - Once race is completed, click on the Check Payout button to learn how much the player has won, or if they lost their money
     - then rinse and repeat the above steps.
-3. The game is over if the player is forced to wager their last point
+3. If the playerr's choice matches then winner of the race, then the bet is paid out accordering to odds 
+4. If the player does not choose the winner of the race, then the bet is lost and the user the player also loses the bet if there is a tie!
+5. The game is over if the player is forced to wager their last point
 
 Research References I used for building game
 https://www.youtube.com/watch?v=eI9idPTT0c4
