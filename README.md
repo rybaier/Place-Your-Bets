@@ -1,5 +1,15 @@
 # Place-Your-Bets
 A browser game deisgned to simulate the horse racing gambling industry
+As a child my father taught the joys and heartaches of betting the horses, I thought it would be fun to design a simple game based upon that idea. Where the gambler (or user in this case) can experience all the emotions that are associated with it. 
+ # emotions like the following:
+ - The hope of picking the right racer and winning your bet!
+ - The anticipation for the race to start!
+ - The excitement while the race is being run!
+ - the fear that you might lose your bet! 
+ - the joy of winning you bet and gaining more! 
+ - the determination of picking the next winner after losing! 
+ - and more!!!
+
 
 Rules of Place Your Bets!
 1. Object of the game is to guess the correct winner of the race
