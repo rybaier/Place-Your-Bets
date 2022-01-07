@@ -98,8 +98,8 @@ function racingSpeed () {
     raceAudio.play()
     let speed1 =Math.floor(Math.random()*7) + 1
     let speed2 =Math.floor(Math.random()*8) + 1
-    let speed3 =Math.floor(Math.random()*12) + 1
-    let speed4 =Math.floor(Math.random()*15) + 1
+    let speed3 =Math.floor(Math.random()*8) + 1
+    let speed4 =Math.floor(Math.random()*8) + 1
     racer1.style.transitionDuration = `${speed1}s`
     racer2.style.transitionDuration = `${speed2}s`
     racer3.style.transitionDuration = `${speed3}s`
