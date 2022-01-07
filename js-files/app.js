@@ -150,10 +150,7 @@ function gameOver (){
 placeBet.addEventListener('click', getBetValue)
 startRace.addEventListener('click', racingSpeed)
 wagerWinnings.addEventListener('click', betWinnings)
-rules.addEventListener('mouseenter', () => {
-    gameRules.style.display = 'block'
-})
-rules.addEventListener('mouseleave', () => {
-    gameRules.style.display = 'none'
-})
-
+rules.addEventListener('mouseenter', () => {gameRules.style.display = 'block'})
+rules.addEventListener('mouseleave', () => {gameRules.style.display = 'none'})
+musicOn.addEventListener('click',  playAudio)
+musicOff.addEventListener('click', pauseAudio)

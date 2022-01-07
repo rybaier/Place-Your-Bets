@@ -68,7 +68,8 @@ let chosenRacer = ' '
 let message = ' '
 let racerMessage = ' '
 //SOUND EFFECTS 
-let musicButton = document.querySelector('#music')
+let musicOn = document.querySelector('#music')
+let musicOff = document.querySelector('#music-off')
 console.log (music)
 let audioTrack = new Audio ('sound effects /music_zapsplat_astro_race.mp3')
 audioTrack.loop = true
@@ -88,6 +89,10 @@ let cheerAudio = new Audio ('sound effects /cheering.mp3')
 function playAudio () {
     audioTrack.loop = true
     audioTrack.play()
+}
+
+function pauseAudio () {
+    audioTrack.pause()
 }
 
 function getBetValue(){
@@ -216,7 +221,10 @@ rules.addEventListener('mouseenter', () => {
 rules.addEventListener('mouseleave', () => {
     gameRules.style.display = 'none'
 })
-// event listener for music on off toggle?
+musicOn.addEventListener('click',  playAudio)
+musicOff.addEventListener('click', pauseAudio)
+
+// event listener for music on off toggle? two buttons on + off
 
 
 // function chooseRacer (event){
