@@ -27,29 +27,49 @@ Rules of Place Your Bets!
 4. If the player does not choose the winner of the race, then the bet is lost and the user the player also loses the bet if there is a tie!
 5. The game is over if the player is forced to wager their last point
 
-The Build
-![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/PYB-screenshot-1-1-10pm.png) 
-My canvas styling trial
-
-![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/PYB-01-04-at-3.21.37-PM.png) 
-My CSS Basic style for visual functionality 
-
-![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/Screen-Shot-2022-01-05-at-3.53.14-PM.png)
-
-![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/Screen-Shot-2022-01-05-at-3.54.26-PM.png)
-
 Timeline Plan
 - Dec 25 - Wireframe
 - Dec 30 - Pseudo and repo creation
 - Dec 31 - Dasic Html, CSS, JS setup of classes, ids, variables
 - Jan 3 - work on functions
 - Jan 5 - Functions, mvp finished
-- Jan 6 - css with mvp working and ReadMe design and presentation
+- Jan 6 - full css with mvp working and ReadMe design and presentation
 - Jan 7 - Presentation
-- Jan 8-9 - stretch goals and beyond mvp 
-Over the course of the project I was consistently ahead of my timeline plan until the 7th. 
+- Jan 8-9 - stretch goals and beyond mvp and mobile friendly
 
-Icebox Items 
+The Build
+Over the course of the project I was consistently ahead of my timeline plan until the 7th. Even though I ran into a few blockers along the way. My first major blocker (which was also the largest of the whole project) was the animation of the race. I had to have the animation running in order to finish and test my racingSpeed function. This took me a couple of days to solve. I bounced between CSS and Canvas styling until unltimately deciding to focus specifically on styling with CSS.  
+
+![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/PYB-screenshot-1-1-10pm.png) 
+HTML Canvas/JS styling trial - abandoned (note: from my experimentation I look forward to diving deeper into the canvas element for future games and applications).
+
+![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/PYB-01-04-at-3.21.37-PM.png) 
+CSS Basic style for visual functionality 
+
+With the race animation working I was able to move steadily through my functions, until I reached my MVP. I had a few other blockers but nothing as significant as the first, the only other one worthy of note was I ran into some trouble adding event listeners for the chooseRacer class and ended up creating a function for it specifically, so it could isolate them from the rest of the code block.  This had the effect of being able to easily add more racers if I desired as I originally started with 2. 
+
+![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/Screen-Shot-2022-01-05-at-3.53.14-PM.png)
+CSS major style 
+After reaching a fully functional game for my MVP I dove into styling and had quite a bit of fun seeing the game come to life. Besides layout and the extra pinache. I added gifs for the racers, a gameOver gif, and sound effects! 
+
+![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/Screen-Shot-2022-01-05-at-3.54.26-PM.png)
+CSS Animation at work
+
+![alt text]
+final game style
+![alt text]
+game over screen
+Final style for presentation
+For an in-depth look at my thought process during the game build please refer to the links below 
+[Pseudo](https://github.com/rybaier/Place-Your-Bets/blob/main/js-files/pseudo.js)
+[Build and Test file](https://github.com/rybaier/Place-Your-Bets/blob/main/js-files/test.js)
+
+Icebox Items/ future plans for the game
+1. Making it a mobile friendly game for cell phone use
+2. Trying to refactor the JS code to as few lines as possible.
+3. Making the game with 3d animation that shows the racers physically moving
+
+
 # Languages
 - HTML5
 - CSS
