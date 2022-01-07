@@ -25,7 +25,9 @@ h3 {
     right: auto;
     text-shadow: 2px 2px 5px rgb(182, 24, 24);
 }
-
+p{
+    font-family: 'Courier New', Courier, monospace;
+}
 #point-bank-display {
     position: relative;
     left: 860px;
