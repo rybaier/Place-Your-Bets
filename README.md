@@ -12,6 +12,8 @@ As a child my father taught the joys and heartaches of betting the horses, I tho
  - the determination of picking the next winner after losing! 
  - and more!!!
 
+
+
 ### Timeline Plan
 - Dec 25 - Wireframe
 - Dec 30 - Pseudo and repo creation
@@ -21,6 +23,9 @@ As a child my father taught the joys and heartaches of betting the horses, I tho
 - Jan 6 - full css with mvp working and ReadMe design and presentation
 - Jan 7 - Presentation
 - Jan 8-9 - stretch goals and beyond mvp and mobile friendly
+
+## The Wireframe
+![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/SquaresRacing.png)
 
 ## The Build
 Over the course of the project I was consistently ahead of my timeline plan until the 7th. Even though I ran into a few blockers along the way. My first major blocker (which was also the largest of the whole project) was the animation of the race. I had to have the animation running in order to finish and test my racingSpeed function. This took me a couple of days to solve. I bounced between CSS and Canvas styling until unltimately deciding to focus specifically on styling with CSS.  
