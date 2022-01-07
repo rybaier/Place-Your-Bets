@@ -65,7 +65,7 @@
 //CHECK            //(after mvp) use gif in place of game over message
         //AFTER MVP ideas
 //CHECK            // button sound effects
-            // background audio track
+            // background audio track (need to add button for optional background music)
 
 //FUNCTIONS
     // function for point bank bet value subtraction

@@ -68,6 +68,8 @@ let chosenRacer = ' '
 let message = ' '
 let racerMessage = ' '
 //SOUND EFFECTS 
+let musicButton = document.querySelector('#music')
+console.log (music)
 let audioTrack = new Audio ('sound effects /music_zapsplat_astro_race.mp3')
 audioTrack.loop = true
 // audioTrack.play()
@@ -83,6 +85,10 @@ let cheerAudio = new Audio ('sound effects /cheering.mp3')
 // let winningRacer = this should be an arrow function for //event that takes first square across the finish line
 
 //FUNCTIONS
+function playAudio () {
+    audioTrack.loop = true
+    audioTrack.play()
+}
 
 function getBetValue(){
     betAudio.play()
@@ -210,6 +216,7 @@ rules.addEventListener('mouseenter', () => {
 rules.addEventListener('mouseleave', () => {
     gameRules.style.display = 'none'
 })
+// event listener for music on off toggle?
 
 
 // function chooseRacer (event){
