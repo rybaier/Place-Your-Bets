@@ -34,6 +34,8 @@ let message = ' '
 let racerMessage = ' '
 
 //SOUND EFFECTS 
+let musicOn = document.querySelector('#music')
+let musicOff = document.querySelector('#music-off')
 let audioTrack = new Audio ('sound effects /music_zapsplat_astro_race.mp3')
 let betAudio =  new Audio ('sound effects /zapsplat_foley_cash_register_ka_ching_001_44087.mp3')
 let winAudio = new Audio ('sound effects /cartoon_success_fanfair.mp3')
@@ -42,6 +44,15 @@ let raceAudio = new Audio ('sound effects /horserunning.mp3')
 let cheerAudio = new Audio ('sound effects /cheering.mp3')
 
 //FUNCTIONS
+function playAudio () {
+    audioTrack.loop = true
+    audioTrack.play()
+}
+
+function pauseAudio () {
+    audioTrack.pause()
+}
+
 function getBetValue(){
     betAudio.play()
     racer1.style.transitionDuration = `0.5s`
