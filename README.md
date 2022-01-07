@@ -49,8 +49,8 @@ After reaching a fully functional game for my MVP I dove into styling and had qu
 
 
 #### For an in-depth look at my thought process during the game build please refer to the links below 
-[Pseudo](https://github.com/rybaier/Place-Your-Bets/blob/main/js-files/pseudo.js)
-[Build and Test file](https://github.com/rybaier/Place-Your-Bets/blob/main/js-files/test.js)
+- [Pseudo](https://github.com/rybaier/Place-Your-Bets/blob/main/js-files/pseudo.js)
+- [Build and Test file](https://github.com/rybaier/Place-Your-Bets/blob/main/js-files/test.js)
 
 ### Icebox Items/ future plans for the game
 1. Making it a mobile friendly game for cell phone use

@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Poiret+One&family=UnifrakturCook:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=UnifrakturCook:wght@700&display=swap');
+ /* font-family: 'Press Start 2P', cursive;  font-family: 'UnifrakturCook', cursive;*/
+ body {
+    background-color: rgb(110, 70, 123);
+}
+h1{
+    color:rgba(254, 7, 7, 0.838);
+    text-align: center;
+    font-size: 100px;
+   
+}
+ h2{
+    font-family: 'UnifrakturCook', cursive; 
+        font-size: 40px;
+}
+ 
+h3 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 35px;
+    text-align: center;
+    position: relative;
+    top: 50px;
+    right: auto;
+}
+
+#racetrack {
+    
+}
+
+/* #point-bank-display {
+
+    
+}
+
+#point-bank-total {
+
+}
+
+#start-race{
+   
+
+}
+#place-bet {
+   
+}
+
+#check-if-won {
+  
+}
+
+.racers {
+  
+}
+
+#bet-value-input{
+
+
+}
+
+#rules {
+    
+   
+}
+
+#music {
+   
+}
+
+#music-off {
+ 
+}
+
+
+#starting-line {
+   
+    
+}
+#finish-line{
+   
+}
+#finish-text{
+ 
+
+    
+}
+#start-text{
+   
+}
+
+
+.racers-on-track{
+   
+}
+
+#racer-one {
+   
+}
+
+#racer-two {
+  
+}
+#racer-three {
+    
+}
+#racer-four {
+   
+}
+
+#gameover {
+  
+}
+
+#rules-text {
+
+}
+.title {
+ 
+}
+#messages {
+} */
