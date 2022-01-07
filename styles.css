@@ -32,6 +32,7 @@ h3 {
     border-radius: 10px;
     width: 250px;
     text-align: center;
+    
 }
 
 #point-bank-total {
@@ -40,7 +41,7 @@ h3 {
     display: inline-block;
     background-color: skyblue;
     border: 7px solid rgb(248, 243, 243);
-    border-radius: 10px;
+    border-radius: 50px;
     width: 85px;
     text-align: center;
 }
@@ -82,7 +83,6 @@ h3 {
     position: relative;
     top: 50px;
     left: 10px;
-
 }
 
 .racers {
@@ -95,7 +95,7 @@ h3 {
     margin: 20px;
     font-family: 'Press Start 2P', cursive;
     border-radius: 10px;
-    
+    box-shadow: 4px 2px 1px red
 }
 
 #bet-value-input{
@@ -106,6 +106,7 @@ h3 {
     font-size: 20px;
     text-align: center;
     border-radius:  25px;
+    box-shadow: 2px 0px 10px rgba(232, 227, 227, 0.557)
 
 }
 
@@ -118,7 +119,7 @@ h3 {
     font-family: 'Press Start 2P', cursive;
     font-size: medium;
     position: relative;
-    top: 150px;
+    top: 152px;
     right: 625px;
    
 }
@@ -132,9 +133,10 @@ h3 {
     font-family: 'Press Start 2P', cursive;
     font-size: medium;
     position: relative;
-    top: 5px;
-    left: 220px;
+    top: 152px;
+    right: 620px;
 }
+
 #music-off {
     width: 120px;
     height: 50px;
@@ -144,8 +146,8 @@ h3 {
     font-family: 'Press Start 2P', cursive;
     font-size: medium;
     position: relative;
-    top: 5px;
-    left:250px;
+    top: 152px;
+    right: 610px;
 }
 
 #racetrack {
@@ -211,8 +213,6 @@ h3 {
     display: flex;
     flex-direction: column;
     align-content: space-between;
-    
-    
 }
 
 #racer-one {

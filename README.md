@@ -27,11 +27,29 @@ Rules of Place Your Bets!
 4. If the player does not choose the winner of the race, then the bet is lost and the user the player also loses the bet if there is a tie!
 5. The game is over if the player is forced to wager their last point
 
-![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/PYB-01-04-at-3.21.37-PM.png)
-![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/PYB-screenshot-1-1-10pm.png)
+The Build
+![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/PYB-screenshot-1-1-10pm.png) 
+My canvas styling trial
+
+![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/PYB-01-04-at-3.21.37-PM.png) 
+My CSS Basic style for visual functionality 
+
 ![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/Screen-Shot-2022-01-05-at-3.53.14-PM.png)
+
 ![alt text](https://github.com/rybaier/Place-Your-Bets/blob/main/images%20/screenshots-of-game/Screen-Shot-2022-01-05-at-3.54.26-PM.png)
 
+Timeline Plan
+- Dec 25 - Wireframe
+- Dec 30 - Pseudo and repo creation
+- Dec 31 - Dasic Html, CSS, JS setup of classes, ids, variables
+- Jan 3 - work on functions
+- Jan 5 - Functions, mvp finished
+- Jan 6 - css with mvp working and ReadMe design and presentation
+- Jan 7 - Presentation
+- Jan 8-9 - stretch goals and beyond mvp 
+Over the course of the project I was consistently ahead of my timeline plan until the 7th. 
+
+Icebox Items 
 # Languages
 - HTML5
 - CSS
