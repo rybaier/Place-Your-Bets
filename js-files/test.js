@@ -70,7 +70,7 @@ let racerMessage = ' '
 //SOUND EFFECTS 
 let musicOn = document.querySelector('#music')
 let musicOff = document.querySelector('#music-off')
-console.log (music)
+// console.log (music)
 let audioTrack = new Audio ('sound effects /music_zapsplat_astro_race.mp3')
 audioTrack.loop = true
 // audioTrack.play()
@@ -207,7 +207,6 @@ function gameOver (){
          gameOverMessage = 'You have gambled away your last point', 
          printMessage.innerHTML = gameOverMessage, printMessage
        } 
-    
 } 
 
 //EVENT LISTENERS
