@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Palette+Mosaic&family=Poiret+One&family=UnifrakturCook:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=UnifrakturCook:wght@700&display=swap');
  /* font-family: 'Press Start 2P', cursive;  font-family: 'UnifrakturCook', cursive;*/
- @media (max-width: 500px) {
+ 
+@media (max-width: 1000px){
+    #racetrack {
+        position: relative;
+        top: 700px;
+        right: 200px;
+        zoom: 60%;   
+        
+    }
+}
+@media (max-width: 500px) {
  
  body {
     background-color: rgb(110, 70, 123); 
+    zoom: 50%;
 }
 h1{
     color:rgba(254, 7, 7, 0.838);
@@ -121,6 +132,7 @@ h3 {
   left: 500px;
 
 }
+
 /* #starting-line {
    
     
