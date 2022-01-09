@@ -2,15 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=UnifrakturCook:wght@700&display=swap');
  /* font-family: 'Press Start 2P', cursive;  font-family: 'UnifrakturCook', cursive;*/
  
-@media (max-width: 1000px){
-    #racetrack {
-        position: relative;
-        top: 700px;
-        right: 200px;
-        zoom: 60%;   
-        
-    }
-}
+
 @media (max-width: 500px) {
  
  body {
@@ -71,7 +63,8 @@ h3 {
 
 #check-if-won {
     zoom: 200%;
-    left: 430px;
+    top: 150px;
+    left: 200px;
 
 }
 
@@ -123,7 +116,7 @@ h3 {
 #messages {
     position:absolute;
     top: 1000px;
-    left: 250px;
+    left: 950px;
 }
 
 #gameover {
@@ -133,45 +126,32 @@ h3 {
 
 }
 
+
+/*FOR FUTURE MEDIA QUERY CHANGES
+@media (max-width: 1000px){
+    restyle above elements
+    to fit screen    
+}
 /* #starting-line {
-   
-    
-}
+   }
 .title {
- 
 }
-#finish-line{
-   
+#finish-line{ 
 }
-#finish-text{
- 
-
-    
+#finish-text{  
 }
-#start-text{
-   
+#start-text{ 
 }
-
-
-.racers-on-track{
-   
+.racers-on-track{ 
 }
-
 #racer-one {
-   
 }
-
-#racer-two {
-  
+#racer-two { 
 }
-#racer-three {
-    
+#racer-three {   
 }
-#racer-four {
-   
+#racer-four {  
 }
-
-
 
  */
 

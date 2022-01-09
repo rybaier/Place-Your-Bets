@@ -9,6 +9,8 @@ h1{
     font-size: 100px;
     font-family: 'UnifrakturCook', cursive;
     text-shadow: 4px 2px 1px rgb(14, 14, 14);
+    position: relative;
+    right: 300px;
 }
  h2{
     font-family: 'UnifrakturCook', cursive; 
