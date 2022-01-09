@@ -15,7 +15,7 @@
  
  body {
     background-color: rgb(110, 70, 123); 
-    zoom: 50%;
+    zoom: 40%;
 }
 h1{
     color:rgba(254, 7, 7, 0.838);
@@ -65,7 +65,7 @@ h3 {
 #place-bet {
     zoom: 200%;
     top: 100px;
-    left: 150px;
+    left: -40px ;
 
 }
 
@@ -95,21 +95,21 @@ h3 {
 #rules {
     position:absolute;
     display:block;
-    top: 1225px;
+    top: 1125px;
     left: 200px;
     zoom: 150%;
 }
 
 #music {
     display:block;
-    top: 450px;
+    top: 550px;
     left: 200px;
     zoom: 150%;
 }
 
 #music-off {
     display:block;
-    top: 475px;
+    top: 575px;
     left: 200px;
     zoom: 150%;
 }

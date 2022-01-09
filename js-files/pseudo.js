@@ -95,12 +95,15 @@
 
 //(after MVP) place bet button with event listener that takes input from bet value input
 //AFTER MVP IDEAS
-    //add sound effects 
+//CHECK    //add sound effects 
 //CHECK    //change losing message to losing gif
 //CHECK    // add gifs to racers    
-    // add game rules button that displays rules on hover 
-        //use css to design rule box, highest z -index white background hide with opacity =0
-        // use JS for event listener hover to display rules change opacity to 1 
+//CHECK    // add game rules button that displays rules on hover 
+//CHECK        //use css to design rule box, highest z -index white background hide with opacity =0
+//CHECK        // use JS for event listener hover to display rules change opacity to 1 
+//CHECK                    //--used display none to display block instead of opacity
+//CHECK                    // using opacity interfered with the buttons 
+
 
 //NOTES
 //<!--should i use progress for the squares? no. -->
@@ -115,3 +118,7 @@
 //the higher the number the more in the front it is.
  //need to figure out css and how to get squares to move for this functionto be built 
     //have switched to canvas animation this may be better served in that file
+
+// a reset button that resets racers, bets, and point bank
+//have a Game start screen with the rules on it and a start game button 
+// make point goals that lead to other gambling game options 
