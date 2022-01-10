@@ -105,3 +105,5 @@ giphy.com/Chris Timmons
 giphy.com/Disney Parks
 giphy.com/stickers
 ezgif.com for resizing and optimizing gifs
+
+Audio came from Zatsplat royalty free sounds
