@@ -122,3 +122,5 @@
 // a reset button that resets racers, bets, and point bank
 //have a Game start screen with the rules on it and a start game button 
 // make point goals that lead to other gambling game options 
+//fix pay out bugs
+// event listener click disablers
