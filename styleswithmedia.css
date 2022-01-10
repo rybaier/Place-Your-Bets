@@ -79,7 +79,7 @@ h3 {
 
 #bet-value-input{
     display: block;
-    width: 100px;
+    width: 150px;
     height: 100px;
     top: 150px;
     left: 200px;
@@ -129,6 +129,7 @@ h3 {
 
 /*FOR FUTURE MEDIA QUERY CHANGES
 @media (max-width: 1000px){
+    laptop avg size
     restyle above elements
     to fit screen    
 }

@@ -65,6 +65,10 @@ After reaching a fully functional game for my MVP I dove into styling and had qu
 1. Making it a mobile friendly game for cell phone use
 2. Trying to refactor the JS code to as few lines as possible.
 3. Making the game with 3d animation that shows the racers physically moving
+4. A reset button that resets racers, bets, and point bank
+5. Have a Game start screen with the rules on it and a start game button 
+6. Make point goals that lead to other gambling game options 
+7. Click Disablers
 
 ## The Game
 [Place Your Bets](https://rybaier.github.io/Place-Your-Bets/)
