@@ -92,10 +92,16 @@ After reaching a fully functional game for my MVP I dove into styling and had qu
 - CSS
 - JavaScript 
 
-# Research References I used for building game
+# Research References and tools I used for building game
 https://www.youtube.com/watch?v=eI9idPTT0c4
 https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
 https://www.youtube.com/watch?v=YszONjKpgg4
 https://www.w3schools.com/jsref/prop_style_transform.asp
 https://www.w3schools.com/jsref/prop_style_transitionduration.asp
 https://stackoverflow.com/questions/6028128/how-do-i-rotate-text-in-css
+
+gifs
+giphy.com/Chris Timmons
+giphy.com/Disney Parks
+giphy.com/stickers
+ezgif.com for resizing and optimizing gifs
