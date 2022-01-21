@@ -222,6 +222,11 @@ p{
     align-content: space-between;
 }
 
+.racers-on-track div{
+    transition-timing-function: ease-in;
+    
+}
+
 #racer-one {
     background-color: rgba(254, 7, 7, 0.838);
     background-image: url("images /turtle.gif ");
